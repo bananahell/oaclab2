@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2MipsUnicycle
-Mon Nov 09 10:03:17 2020
+Thu Nov 12 13:55:00 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,13 +10,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 09 10:03:17 2020       ;
+; Analysis & Synthesis Status        ; Failed - Thu Nov 12 13:55:00 2020           ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lab2MipsUnicycle                            ;
-; Top-level Entity Name              ; alu32bit                                    ;
+; Top-level Entity Name              ; Lab2MipsUnicycle                            ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 148                                         ;
-;     Total combinational functions  ; 148                                         ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 102                                         ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; alu32bit           ; Lab2MipsUnicycle   ;
+; Top-level entity name                                            ; Lab2MipsUnicycle   ; Lab2MipsUnicycle   ;
 ; Family name                                                      ; Cyclone 10 LP      ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,274 +148,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-; mux2_1bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Pedro Nogueira/Documents/projects/oaclab2/mux2_1bit.bdf       ;         ;
-; mux4_1bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Pedro Nogueira/Documents/projects/oaclab2/mux4_1bit.bdf       ;         ;
-; fulladder2_1bit.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Pedro Nogueira/Documents/projects/oaclab2/fulladder2_1bit.bdf ;         ;
-; mini_alu.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Pedro Nogueira/Documents/projects/oaclab2/mini_alu.bdf        ;         ;
-; alu32bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Pedro Nogueira/Documents/projects/oaclab2/alu32bit.bdf        ;         ;
-; or32.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Pedro Nogueira/Documents/projects/oaclab2/or32.bdf            ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimated Total logic elements              ; 148                ;
-;                                             ;                    ;
-; Total combinational functions               ; 148                ;
-; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 111                ;
-;     -- 3 input functions                    ; 1                  ;
-;     -- <=2 input functions                  ; 36                 ;
-;                                             ;                    ;
-; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 148                ;
-;     -- arithmetic mode                      ; 0                  ;
-;                                             ;                    ;
-; Total registers                             ; 0                  ;
-;     -- Dedicated logic registers            ; 0                  ;
-;     -- I/O registers                        ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 102                ;
-;                                             ;                    ;
-; Embedded Multiplier 9-bit elements          ; 0                  ;
-;                                             ;                    ;
-; Maximum fan-out node                        ; InvertInput1~input ;
-; Maximum fan-out                             ; 67                 ;
-; Total fan-out                               ; 655                ;
-; Average fan-out                             ; 1.86               ;
-+---------------------------------------------+--------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name     ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+-----------------+--------------+
-; |alu32bit                      ; 148 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 102  ; 0            ; |alu32bit                                                    ; alu32bit        ; work         ;
-;    |mini_alu:inst11|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst11                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst11|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst11|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst11|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst11|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst13|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst13                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst13|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst13|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst13|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst13|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst15|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst15                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst15|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst15|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst15|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst15|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst17|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst17                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst17|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst17|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst17|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst17|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst19|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst19                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst19|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst19|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst19|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst19|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst21|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst21                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst21|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst21|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst21|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst21|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst23|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst23                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst23|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst23|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst23|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst23|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst25|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst25                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst25|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst25|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst25|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst25|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst27|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst27                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst27|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst27|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst27|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst27|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst29|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst29                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst29|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst29|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst29|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst29|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst31|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst31                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst31|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst31|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst31|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst31|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst33|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst33                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst33|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst33|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst33|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst33|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst35|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst35                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst35|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst35|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst35|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst35|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst37|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst37                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst37|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst37|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst37|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst37|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst39|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst39                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst39|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst39|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst39|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst39|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst3|            ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst3                                     ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst3|fulladder2_1bit:inst31              ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst3|mux2_1bit:inst33                    ; mux2_1bit       ; work         ;
-;       |mux2_1bit:inst|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst3|mux2_1bit:inst                      ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst3|mux4_1bit:inst34                    ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst3|mux4_1bit:inst34|mux2_1bit:inst2    ; mux2_1bit       ; work         ;
-;          |mux2_1bit:inst|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst3|mux4_1bit:inst34|mux2_1bit:inst     ; mux2_1bit       ; work         ;
-;    |mini_alu:inst41|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst41                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst41|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst41|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst41|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst41|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst43|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst43                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst43|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst43|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst43|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst43|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst45|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst45                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst45|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst45|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst45|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst45|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst47|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst47                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst47|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst47|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst47|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst47|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst49|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst49                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst49|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst49|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst49|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst49|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst51|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst51                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst51|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst51|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst51|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst51|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst53|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst53                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst53|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst53|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst53|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst53|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst55|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst55                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst55|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst55|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst55|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst55|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;    |mini_alu:inst5700|         ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5700                                  ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5700|fulladder2_1bit:inst31           ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5700|mux2_1bit:inst33                 ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5700|mux4_1bit:inst34                 ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5700|mux4_1bit:inst34|mux2_1bit:inst2 ; mux2_1bit       ; work         ;
-;    |mini_alu:inst5900|         ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5900                                  ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5900|fulladder2_1bit:inst31           ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5900|mux2_1bit:inst33                 ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5900|mux4_1bit:inst34                 ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5900|mux4_1bit:inst34|mux2_1bit:inst2 ; mux2_1bit       ; work         ;
-;    |mini_alu:inst5|            ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5                                     ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5|fulladder2_1bit:inst31              ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5|mux2_1bit:inst33                    ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5|mux4_1bit:inst34                    ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst5|mux4_1bit:inst34|mux2_1bit:inst2    ; mux2_1bit       ; work         ;
-;    |mini_alu:inst61|           ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst61                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst61|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst61|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst61|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst61|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;          |mux2_1bit:inst|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst61|mux4_1bit:inst34|mux2_1bit:inst    ; mux2_1bit       ; work         ;
-;    |mini_alu:inst63|           ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst63                                    ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst63|fulladder2_1bit:inst31             ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst63|mux2_1bit:inst33                   ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst63|mux4_1bit:inst34                   ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst63|mux4_1bit:inst34|mux2_1bit:inst2   ; mux2_1bit       ; work         ;
-;          |mux2_1bit:inst|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst63|mux4_1bit:inst34|mux2_1bit:inst    ; mux2_1bit       ; work         ;
-;    |mini_alu:inst700|          ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst700                                   ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst700|fulladder2_1bit:inst31            ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst700|mux2_1bit:inst33                  ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst700|mux4_1bit:inst34                  ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst700|mux4_1bit:inst34|mux2_1bit:inst2  ; mux2_1bit       ; work         ;
-;    |mini_alu:inst900|          ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst900                                   ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst900|fulladder2_1bit:inst31            ; fulladder2_1bit ; work         ;
-;       |mux2_1bit:inst33|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst900|mux2_1bit:inst33                  ; mux2_1bit       ; work         ;
-;       |mux4_1bit:inst34|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst900|mux4_1bit:inst34                  ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst900|mux4_1bit:inst34|mux2_1bit:inst2  ; mux2_1bit       ; work         ;
-;    |mini_alu:inst|             ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst                                      ; mini_alu        ; work         ;
-;       |fulladder2_1bit:inst31| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst|fulladder2_1bit:inst31               ; fulladder2_1bit ; work         ;
-;       |mux4_1bit:inst34|       ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst|mux4_1bit:inst34                     ; mux4_1bit       ; work         ;
-;          |mux2_1bit:inst2|     ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|mini_alu:inst|mux4_1bit:inst34|mux2_1bit:inst2     ; mux2_1bit       ; work         ;
-;    |or32:inst1|                ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu32bit|or32:inst1                                         ; or32            ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+-----------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 102                         ;
-; cycloneiii_lcell_comb ; 149                         ;
-;     normal            ; 149                         ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 111                         ;
-;                       ;                             ;
-; Max LUT depth         ; 37.00                       ;
-; Average LUT depth     ; 24.00                       ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -430,8 +161,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 09 10:02:54 2020
+    Info: Processing started: Thu Nov 12 13:54:53 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2MipsUnicycle -c Lab2MipsUnicycle
+Warning (125092): Tcl Script File rom32bit.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE rom32bit.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab2mipsunicycle.bdf
@@ -457,23 +190,40 @@ Info (12021): Found 1 design units, including 1 entities, in source file program
     Info (12023): Found entity 1: programcounter
 Info (12021): Found 1 design units, including 1 entities, in source file control.bdf
     Info (12023): Found entity 1: control
-Info (12127): Elaborating entity "alu32bit" for the top level hierarchy
-Info (12128): Elaborating entity "mini_alu" for hierarchy "mini_alu:inst"
-Info (12128): Elaborating entity "mux4_1bit" for hierarchy "mini_alu:inst|mux4_1bit:inst34"
-Info (12128): Elaborating entity "mux2_1bit" for hierarchy "mini_alu:inst|mux4_1bit:inst34|mux2_1bit:inst2"
-Info (12128): Elaborating entity "fulladder2_1bit" for hierarchy "mini_alu:inst|fulladder2_1bit:inst31"
-Info (12128): Elaborating entity "or32" for hierarchy "or32:inst1"
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 250 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 68 input pins
-    Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 148 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4745 megabytes
-    Info: Processing ended: Mon Nov 09 10:03:17 2020
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:26
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder2_32bit.bdf
+    Info (12023): Found entity 1: fulladder2_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_32bit.bdf
+    Info (12023): Found entity 1: mux2_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file shift1left32bit.bdf
+    Info (12023): Found entity 1: shift1left32bit
+Info (12021): Found 1 design units, including 1 entities, in source file shift1left16bit.bdf
+    Info (12023): Found entity 1: shift1left16bit
+Info (12021): Found 1 design units, including 1 entities, in source file registers.bdf
+    Info (12023): Found entity 1: registers
+Info (12021): Found 1 design units, including 1 entities, in source file instructions_memory.bdf
+    Info (12023): Found entity 1: instructions_memory
+Info (12021): Found 1 design units, including 1 entities, in source file dflipflop.bdf
+    Info (12023): Found entity 1: dflipflop
+Info (12021): Found 1 design units, including 1 entities, in source file dflipflop32bit.bdf
+    Info (12023): Found entity 1: dflipflop32bit
+Info (12021): Found 1 design units, including 1 entities, in source file writeenabledflipflop32bit.bdf
+    Info (12023): Found entity 1: writeenabledflipflop32bit
+Info (12021): Found 1 design units, including 1 entities, in source file mux32_32bit.bdf
+    Info (12023): Found entity 1: mux32_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file 32writeenabledflipflop32bit.bdf
+    Info (12023): Found entity 1: 32writeenabledflipflop32bit
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_5bit.bdf
+    Info (12023): Found entity 1: mux2_5bit
+Warning (12018): Entity "and5" will be ignored because it conflicts with Quartus Prime primitive name
+Info (12021): Found 1 design units, including 1 entities, in source file and5_1bit.bdf
+    Info (12023): Found entity 1: and5_1bit
+Info (12127): Elaborating entity "Lab2MipsUnicycle" for the top level hierarchy
+Error (275023): Width mismatch in Instruction[15..0] -- source is ""Instruction[31..0]" (ID instructions_memory:inst4)"
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 8 warnings
+    Error: Peak virtual memory: 4702 megabytes
+    Error: Processing ended: Thu Nov 12 13:55:00 2020
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:18
 
 
