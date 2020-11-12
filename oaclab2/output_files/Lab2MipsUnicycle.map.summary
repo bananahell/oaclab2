@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 09 10:03:17 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : Lab2MipsUnicycle
+Top-level Entity Name : alu32bit
+Family : Cyclone 10 LP
+Total logic elements : 148
+    Total combinational functions : 148
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 102
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

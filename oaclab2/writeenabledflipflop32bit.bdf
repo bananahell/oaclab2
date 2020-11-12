@@ -1,0 +1,5234 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -208 -296 -40 -280)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Input[31..0]" (rect 5 0 61 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -216 -160 -48 -144)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "ClockInput" (rect 5 0 58 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 600 -544 616 -376)
+	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
+	(text "WriteEnable" (rect -1 5 16 65)(font "Intel Clear" )(vertical))
+	(pt 8 168)
+	(drawing
+		(line (pt 4 84)(pt 4 109))
+		(line (pt 12 84)(pt 12 109))
+		(line (pt 8 113)(pt 8 168))
+		(line (pt 4 84)(pt 12 84))
+		(line (pt 12 109)(pt 8 113))
+		(line (pt 4 109)(pt 8 113))
+	)
+	(rotate270)
+	(text "VCC" (rect -1 128 9 148)(font "Arial" (font_size 6))(vertical))
+)
+(pin
+	(output)
+	(rect 976 -304 1156 -288)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "OutputRes[31..0]" (rect 90 0 174 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 384 -320 568 -224)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 384 -200 568 -104)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst2" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 -328 752 -232)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst1" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 616 -208 752 -112)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst33" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 -80 568 16)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst3" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 -88 752 8)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst34" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 40 568 136)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst4" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 32 752 128)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst35" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 160 568 256)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst5" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 152 752 248)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst36" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 280 568 376)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst6" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 272 752 368)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst37" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 400 568 496)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst7" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 392 752 488)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst38" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 520 568 616)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst8" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 512 752 608)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst39" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 640 568 736)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst9" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 632 752 728)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst40" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 760 568 856)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst10" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 752 752 848)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst41" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 880 568 976)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst11" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 872 752 968)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst42" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1000 568 1096)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst12" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 992 752 1088)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst43" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1120 568 1216)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst13" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 1112 752 1208)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst44" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1240 568 1336)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst14" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 1232 752 1328)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst45" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1360 568 1456)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst15" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 1352 752 1448)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst46" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1480 568 1576)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst16" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 1472 752 1568)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst47" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1600 568 1696)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst17" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 1592 752 1688)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst48" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1720 568 1816)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst18" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 1712 752 1808)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst49" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1840 568 1936)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst19" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 1832 752 1928)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst50" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 1960 568 2056)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst20" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 1952 752 2048)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst51" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 2080 568 2176)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst21" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 2072 752 2168)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst52" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 2200 568 2296)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst22" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 2192 752 2288)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst53" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 2320 568 2416)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst23" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 2312 752 2408)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst54" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 2440 568 2536)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst24" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 2432 752 2528)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst55" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 2560 568 2656)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst25" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 2552 752 2648)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst56" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 2680 568 2776)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst26" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 2672 752 2768)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst57" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 2800 568 2896)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst27" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 2792 752 2888)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst58" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 2920 568 3016)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst28" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 2912 752 3008)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst59" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 3040 568 3136)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst29" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 3032 752 3128)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst60" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 3160 568 3256)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst30" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 3152 752 3248)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst61" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 3280 568 3376)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst31" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 3272 752 3368)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst62" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 384 3400 568 3496)
+	(text "dflipflop" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst32" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DInput" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "DInput" (rect 21 27 61 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ClockInput" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ClockInput" (rect 21 43 83 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "QResult" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "QResult" (rect 117 27 163 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "notQResult" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "notQResult" (rect 99 43 163 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 616 3392 752 3488)
+	(text "mux2_1bit" (rect 5 0 69 19)(font "Intel Clear" (font_size 8)))
+	(text "inst63" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Result" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Result" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(connector
+	(pt -40 -288)
+	(pt 32 -288)
+	(bus)
+)
+(connector
+	(pt 384 -272)
+	(pt 344 -272)
+)
+(connector
+	(pt 32 -288)
+	(pt 32 -168)
+	(bus)
+)
+(connector
+	(pt 32 -168)
+	(pt 32 -48)
+	(bus)
+)
+(connector
+	(pt 32 -48)
+	(pt 32 72)
+	(bus)
+)
+(connector
+	(pt 32 72)
+	(pt 32 192)
+	(bus)
+)
+(connector
+	(pt 32 192)
+	(pt 32 312)
+	(bus)
+)
+(connector
+	(pt 32 312)
+	(pt 32 432)
+	(bus)
+)
+(connector
+	(pt 32 432)
+	(pt 32 552)
+	(bus)
+)
+(connector
+	(pt 32 552)
+	(pt 32 672)
+	(bus)
+)
+(connector
+	(pt 32 672)
+	(pt 32 792)
+	(bus)
+)
+(connector
+	(pt 32 792)
+	(pt 32 912)
+	(bus)
+)
+(connector
+	(pt 32 912)
+	(pt 32 1032)
+	(bus)
+)
+(connector
+	(pt 32 1032)
+	(pt 32 1152)
+	(bus)
+)
+(connector
+	(pt 32 1152)
+	(pt 32 1272)
+	(bus)
+)
+(connector
+	(pt 32 1272)
+	(pt 32 1392)
+	(bus)
+)
+(connector
+	(pt 32 1392)
+	(pt 32 1512)
+	(bus)
+)
+(connector
+	(pt 32 1512)
+	(pt 32 1632)
+	(bus)
+)
+(connector
+	(pt 32 1632)
+	(pt 32 1752)
+	(bus)
+)
+(connector
+	(pt 32 1752)
+	(pt 32 1872)
+	(bus)
+)
+(connector
+	(pt 32 1872)
+	(pt 32 1992)
+	(bus)
+)
+(connector
+	(pt 32 1992)
+	(pt 32 2112)
+	(bus)
+)
+(connector
+	(pt 32 2112)
+	(pt 32 2232)
+	(bus)
+)
+(connector
+	(pt 32 2232)
+	(pt 32 2352)
+	(bus)
+)
+(connector
+	(pt 32 2352)
+	(pt 32 2472)
+	(bus)
+)
+(connector
+	(pt 32 2472)
+	(pt 32 2592)
+	(bus)
+)
+(connector
+	(pt 32 2592)
+	(pt 32 2712)
+	(bus)
+)
+(connector
+	(pt 32 2712)
+	(pt 32 2832)
+	(bus)
+)
+(connector
+	(pt 32 2832)
+	(pt 32 2952)
+	(bus)
+)
+(connector
+	(pt 32 2952)
+	(pt 32 3072)
+	(bus)
+)
+(connector
+	(pt 32 3072)
+	(pt 32 3192)
+	(bus)
+)
+(connector
+	(pt 32 3192)
+	(pt 32 3312)
+	(bus)
+)
+(connector
+	(pt 32 3312)
+	(pt 32 3432)
+	(bus)
+)
+(connector
+	(text "Input[0]" (rect 42 -304 78 -287)(font "Intel Clear" ))
+	(pt 176 -288)
+	(pt 32 -288)
+)
+(connector
+	(pt 584 -328)
+	(pt 176 -328)
+)
+(connector
+	(pt 176 -288)
+	(pt 176 -328)
+)
+(connector
+	(pt 384 -288)
+	(pt 368 -288)
+)
+(connector
+	(pt 608 -296)
+	(pt 616 -296)
+)
+(connector
+	(pt 584 -264)
+	(pt 616 -264)
+)
+(connector
+	(pt 584 -328)
+	(pt 584 -264)
+)
+(connector
+	(pt 616 -280)
+	(pt 592 -280)
+)
+(connector
+	(pt 592 -280)
+	(pt 592 -288)
+)
+(connector
+	(pt 592 -288)
+	(pt 568 -288)
+)
+(connector
+	(pt 368 -288)
+	(pt 368 -336)
+)
+(connector
+	(pt 784 -336)
+	(pt 368 -336)
+)
+(connector
+	(pt 784 -336)
+	(pt 784 -296)
+)
+(connector
+	(pt 584 -208)
+	(pt 176 -208)
+)
+(connector
+	(pt 176 -168)
+	(pt 176 -208)
+)
+(connector
+	(pt 608 -176)
+	(pt 616 -176)
+)
+(connector
+	(pt 584 -144)
+	(pt 616 -144)
+)
+(connector
+	(pt 584 -208)
+	(pt 584 -144)
+)
+(connector
+	(pt 616 -160)
+	(pt 592 -160)
+)
+(connector
+	(pt 592 -168)
+	(pt 568 -168)
+)
+(connector
+	(pt 368 -168)
+	(pt 368 -216)
+)
+(connector
+	(pt 784 -216)
+	(pt 368 -216)
+)
+(connector
+	(pt 368 -168)
+	(pt 384 -168)
+)
+(connector
+	(pt 784 -216)
+	(pt 784 -176)
+)
+(connector
+	(pt 608 -376)
+	(pt 608 -296)
+)
+(connector
+	(pt 592 -160)
+	(pt 592 -168)
+)
+(connector
+	(text "Input[1]" (rect 42 -184 78 -167)(font "Intel Clear" ))
+	(pt 32 -168)
+	(pt 176 -168)
+)
+(connector
+	(pt 176 -48)
+	(pt 176 -88)
+)
+(connector
+	(pt 608 -56)
+	(pt 616 -56)
+)
+(connector
+	(pt 584 -24)
+	(pt 616 -24)
+)
+(connector
+	(pt 584 -88)
+	(pt 584 -24)
+)
+(connector
+	(pt 616 -40)
+	(pt 592 -40)
+)
+(connector
+	(pt 592 -48)
+	(pt 568 -48)
+)
+(connector
+	(pt 368 -48)
+	(pt 368 -96)
+)
+(connector
+	(pt 784 -96)
+	(pt 368 -96)
+)
+(connector
+	(pt 368 -48)
+	(pt 384 -48)
+)
+(connector
+	(pt 592 -40)
+	(pt 592 -48)
+)
+(connector
+	(pt 784 -96)
+	(pt 784 -56)
+)
+(connector
+	(pt 344 -32)
+	(pt 384 -32)
+)
+(connector
+	(text "Input[2]" (rect 42 -64 78 -47)(font "Intel Clear" ))
+	(pt 32 -48)
+	(pt 176 -48)
+)
+(connector
+	(pt 608 -296)
+	(pt 608 -176)
+)
+(connector
+	(pt 176 72)
+	(pt 176 32)
+)
+(connector
+	(pt 608 64)
+	(pt 616 64)
+)
+(connector
+	(pt 584 96)
+	(pt 616 96)
+)
+(connector
+	(pt 584 32)
+	(pt 584 96)
+)
+(connector
+	(pt 616 80)
+	(pt 592 80)
+)
+(connector
+	(pt 592 72)
+	(pt 568 72)
+)
+(connector
+	(pt 368 72)
+	(pt 368 24)
+)
+(connector
+	(pt 784 24)
+	(pt 368 24)
+)
+(connector
+	(pt 368 72)
+	(pt 384 72)
+)
+(connector
+	(pt 592 80)
+	(pt 592 72)
+)
+(connector
+	(pt 344 88)
+	(pt 384 88)
+)
+(connector
+	(text "Input[3]" (rect 42 56 78 73)(font "Intel Clear" ))
+	(pt 32 72)
+	(pt 176 72)
+)
+(connector
+	(pt 784 24)
+	(pt 784 64)
+)
+(connector
+	(pt 608 -176)
+	(pt 608 -56)
+)
+(connector
+	(pt 176 -88)
+	(pt 584 -88)
+)
+(connector
+	(pt 176 32)
+	(pt 584 32)
+)
+(connector
+	(pt -48 -152)
+	(pt 344 -152)
+)
+(connector
+	(pt 344 -152)
+	(pt 384 -152)
+)
+(connector
+	(pt 344 -272)
+	(pt 344 -152)
+)
+(connector
+	(pt 344 -152)
+	(pt 344 -32)
+)
+(connector
+	(pt 344 -32)
+	(pt 344 88)
+)
+(connector
+	(pt 176 192)
+	(pt 176 152)
+)
+(connector
+	(pt 608 184)
+	(pt 616 184)
+)
+(connector
+	(pt 584 216)
+	(pt 616 216)
+)
+(connector
+	(pt 584 152)
+	(pt 584 216)
+)
+(connector
+	(pt 616 200)
+	(pt 592 200)
+)
+(connector
+	(pt 592 192)
+	(pt 568 192)
+)
+(connector
+	(pt 368 192)
+	(pt 368 144)
+)
+(connector
+	(pt 784 144)
+	(pt 368 144)
+)
+(connector
+	(pt 368 192)
+	(pt 384 192)
+)
+(connector
+	(pt 592 200)
+	(pt 592 192)
+)
+(connector
+	(pt 344 208)
+	(pt 384 208)
+)
+(connector
+	(pt 176 312)
+	(pt 176 272)
+)
+(connector
+	(pt 608 304)
+	(pt 616 304)
+)
+(connector
+	(pt 584 336)
+	(pt 616 336)
+)
+(connector
+	(pt 584 272)
+	(pt 584 336)
+)
+(connector
+	(pt 616 320)
+	(pt 592 320)
+)
+(connector
+	(pt 592 312)
+	(pt 568 312)
+)
+(connector
+	(pt 368 312)
+	(pt 368 264)
+)
+(connector
+	(pt 784 264)
+	(pt 368 264)
+)
+(connector
+	(pt 368 312)
+	(pt 384 312)
+)
+(connector
+	(pt 592 320)
+	(pt 592 312)
+)
+(connector
+	(pt 344 328)
+	(pt 384 328)
+)
+(connector
+	(pt 176 152)
+	(pt 584 152)
+)
+(connector
+	(pt 176 272)
+	(pt 584 272)
+)
+(connector
+	(text "Input[4]" (rect 42 176 78 193)(font "Intel Clear" ))
+	(pt 32 192)
+	(pt 176 192)
+)
+(connector
+	(text "Input[5]" (rect 42 296 78 313)(font "Intel Clear" ))
+	(pt 32 312)
+	(pt 176 312)
+)
+(connector
+	(pt 784 144)
+	(pt 784 184)
+)
+(connector
+	(pt 784 264)
+	(pt 784 304)
+)
+(connector
+	(pt 344 88)
+	(pt 344 208)
+)
+(connector
+	(pt 608 -56)
+	(pt 608 64)
+)
+(connector
+	(pt 608 64)
+	(pt 608 184)
+)
+(connector
+	(pt 608 184)
+	(pt 608 304)
+)
+(connector
+	(pt 176 432)
+	(pt 176 392)
+)
+(connector
+	(pt 608 424)
+	(pt 616 424)
+)
+(connector
+	(pt 584 456)
+	(pt 616 456)
+)
+(connector
+	(pt 584 392)
+	(pt 584 456)
+)
+(connector
+	(pt 616 440)
+	(pt 592 440)
+)
+(connector
+	(pt 592 432)
+	(pt 568 432)
+)
+(connector
+	(pt 368 432)
+	(pt 368 384)
+)
+(connector
+	(pt 368 432)
+	(pt 384 432)
+)
+(connector
+	(pt 592 440)
+	(pt 592 432)
+)
+(connector
+	(pt 344 448)
+	(pt 384 448)
+)
+(connector
+	(pt 176 552)
+	(pt 176 512)
+)
+(connector
+	(pt 608 544)
+	(pt 616 544)
+)
+(connector
+	(pt 584 576)
+	(pt 616 576)
+)
+(connector
+	(pt 584 512)
+	(pt 584 576)
+)
+(connector
+	(pt 616 560)
+	(pt 592 560)
+)
+(connector
+	(pt 592 552)
+	(pt 568 552)
+)
+(connector
+	(pt 368 552)
+	(pt 368 504)
+)
+(connector
+	(pt 784 504)
+	(pt 368 504)
+)
+(connector
+	(pt 368 552)
+	(pt 384 552)
+)
+(connector
+	(pt 592 560)
+	(pt 592 552)
+)
+(connector
+	(pt 344 568)
+	(pt 384 568)
+)
+(connector
+	(pt 176 512)
+	(pt 584 512)
+)
+(connector
+	(pt 176 672)
+	(pt 176 632)
+)
+(connector
+	(pt 608 664)
+	(pt 616 664)
+)
+(connector
+	(pt 584 696)
+	(pt 616 696)
+)
+(connector
+	(pt 584 632)
+	(pt 584 696)
+)
+(connector
+	(pt 616 680)
+	(pt 592 680)
+)
+(connector
+	(pt 592 672)
+	(pt 568 672)
+)
+(connector
+	(pt 368 672)
+	(pt 368 624)
+)
+(connector
+	(pt 784 624)
+	(pt 368 624)
+)
+(connector
+	(pt 368 672)
+	(pt 384 672)
+)
+(connector
+	(pt 592 680)
+	(pt 592 672)
+)
+(connector
+	(pt 344 688)
+	(pt 384 688)
+)
+(connector
+	(pt 176 792)
+	(pt 176 752)
+)
+(connector
+	(pt 608 784)
+	(pt 616 784)
+)
+(connector
+	(pt 584 816)
+	(pt 616 816)
+)
+(connector
+	(pt 584 752)
+	(pt 584 816)
+)
+(connector
+	(pt 616 800)
+	(pt 592 800)
+)
+(connector
+	(pt 592 792)
+	(pt 568 792)
+)
+(connector
+	(pt 368 792)
+	(pt 368 744)
+)
+(connector
+	(pt 784 744)
+	(pt 368 744)
+)
+(connector
+	(pt 368 792)
+	(pt 384 792)
+)
+(connector
+	(pt 592 800)
+	(pt 592 792)
+)
+(connector
+	(pt 344 808)
+	(pt 384 808)
+)
+(connector
+	(pt 176 632)
+	(pt 584 632)
+)
+(connector
+	(pt 176 752)
+	(pt 584 752)
+)
+(connector
+	(pt 784 384)
+	(pt 784 424)
+)
+(connector
+	(pt 784 504)
+	(pt 784 544)
+)
+(connector
+	(pt 784 624)
+	(pt 784 664)
+)
+(connector
+	(pt 784 744)
+	(pt 784 784)
+)
+(connector
+	(pt 608 664)
+	(pt 608 784)
+)
+(connector
+	(pt 608 424)
+	(pt 608 544)
+)
+(connector
+	(pt 608 544)
+	(pt 608 664)
+)
+(connector
+	(pt 344 568)
+	(pt 344 688)
+)
+(connector
+	(text "Input[6]" (rect 42 416 78 433)(font "Intel Clear" ))
+	(pt 32 432)
+	(pt 176 432)
+)
+(connector
+	(text "Input[7]" (rect 42 536 78 553)(font "Intel Clear" ))
+	(pt 32 552)
+	(pt 176 552)
+)
+(connector
+	(text "Input[8]" (rect 42 656 78 673)(font "Intel Clear" ))
+	(pt 32 672)
+	(pt 176 672)
+)
+(connector
+	(text "Input[9]" (rect 42 776 78 793)(font "Intel Clear" ))
+	(pt 32 792)
+	(pt 176 792)
+)
+(connector
+	(pt 176 912)
+	(pt 176 872)
+)
+(connector
+	(pt 608 904)
+	(pt 616 904)
+)
+(connector
+	(pt 584 936)
+	(pt 616 936)
+)
+(connector
+	(pt 584 872)
+	(pt 584 936)
+)
+(connector
+	(pt 616 920)
+	(pt 592 920)
+)
+(connector
+	(pt 592 912)
+	(pt 568 912)
+)
+(connector
+	(pt 368 912)
+	(pt 368 864)
+)
+(connector
+	(pt 784 864)
+	(pt 368 864)
+)
+(connector
+	(pt 368 912)
+	(pt 384 912)
+)
+(connector
+	(pt 592 920)
+	(pt 592 912)
+)
+(connector
+	(pt 344 928)
+	(pt 384 928)
+)
+(connector
+	(pt 176 1032)
+	(pt 176 992)
+)
+(connector
+	(pt 608 1024)
+	(pt 616 1024)
+)
+(connector
+	(pt 584 1056)
+	(pt 616 1056)
+)
+(connector
+	(pt 584 992)
+	(pt 584 1056)
+)
+(connector
+	(pt 616 1040)
+	(pt 592 1040)
+)
+(connector
+	(pt 592 1032)
+	(pt 568 1032)
+)
+(connector
+	(pt 368 1032)
+	(pt 368 984)
+)
+(connector
+	(pt 784 984)
+	(pt 368 984)
+)
+(connector
+	(pt 368 1032)
+	(pt 384 1032)
+)
+(connector
+	(pt 592 1040)
+	(pt 592 1032)
+)
+(connector
+	(pt 344 1048)
+	(pt 384 1048)
+)
+(connector
+	(pt 176 992)
+	(pt 584 992)
+)
+(connector
+	(pt 176 1152)
+	(pt 176 1112)
+)
+(connector
+	(pt 608 1144)
+	(pt 616 1144)
+)
+(connector
+	(pt 584 1176)
+	(pt 616 1176)
+)
+(connector
+	(pt 584 1112)
+	(pt 584 1176)
+)
+(connector
+	(pt 616 1160)
+	(pt 592 1160)
+)
+(connector
+	(pt 592 1152)
+	(pt 568 1152)
+)
+(connector
+	(pt 368 1152)
+	(pt 368 1104)
+)
+(connector
+	(pt 784 1104)
+	(pt 368 1104)
+)
+(connector
+	(pt 368 1152)
+	(pt 384 1152)
+)
+(connector
+	(pt 592 1160)
+	(pt 592 1152)
+)
+(connector
+	(pt 344 1168)
+	(pt 384 1168)
+)
+(connector
+	(pt 176 1272)
+	(pt 176 1232)
+)
+(connector
+	(pt 608 1264)
+	(pt 616 1264)
+)
+(connector
+	(pt 584 1296)
+	(pt 616 1296)
+)
+(connector
+	(pt 584 1232)
+	(pt 584 1296)
+)
+(connector
+	(pt 616 1280)
+	(pt 592 1280)
+)
+(connector
+	(pt 592 1272)
+	(pt 568 1272)
+)
+(connector
+	(pt 368 1272)
+	(pt 368 1224)
+)
+(connector
+	(pt 784 1224)
+	(pt 368 1224)
+)
+(connector
+	(pt 368 1272)
+	(pt 384 1272)
+)
+(connector
+	(pt 592 1280)
+	(pt 592 1272)
+)
+(connector
+	(pt 344 1288)
+	(pt 384 1288)
+)
+(connector
+	(pt 176 1112)
+	(pt 584 1112)
+)
+(connector
+	(pt 176 1232)
+	(pt 584 1232)
+)
+(connector
+	(pt 176 1392)
+	(pt 176 1352)
+)
+(connector
+	(pt 608 1384)
+	(pt 616 1384)
+)
+(connector
+	(pt 584 1416)
+	(pt 616 1416)
+)
+(connector
+	(pt 584 1352)
+	(pt 584 1416)
+)
+(connector
+	(pt 616 1400)
+	(pt 592 1400)
+)
+(connector
+	(pt 592 1392)
+	(pt 568 1392)
+)
+(connector
+	(pt 368 1392)
+	(pt 368 1344)
+)
+(connector
+	(pt 368 1392)
+	(pt 384 1392)
+)
+(connector
+	(pt 592 1400)
+	(pt 592 1392)
+)
+(connector
+	(pt 344 1408)
+	(pt 384 1408)
+)
+(connector
+	(pt 176 1512)
+	(pt 176 1472)
+)
+(connector
+	(pt 608 1504)
+	(pt 616 1504)
+)
+(connector
+	(pt 584 1536)
+	(pt 616 1536)
+)
+(connector
+	(pt 584 1472)
+	(pt 584 1536)
+)
+(connector
+	(pt 616 1520)
+	(pt 592 1520)
+)
+(connector
+	(pt 592 1512)
+	(pt 568 1512)
+)
+(connector
+	(pt 368 1512)
+	(pt 368 1464)
+)
+(connector
+	(pt 784 1464)
+	(pt 368 1464)
+)
+(connector
+	(pt 368 1512)
+	(pt 384 1512)
+)
+(connector
+	(pt 592 1520)
+	(pt 592 1512)
+)
+(connector
+	(pt 344 1528)
+	(pt 384 1528)
+)
+(connector
+	(pt 176 1472)
+	(pt 584 1472)
+)
+(connector
+	(pt 176 1632)
+	(pt 176 1592)
+)
+(connector
+	(pt 608 1624)
+	(pt 616 1624)
+)
+(connector
+	(pt 584 1656)
+	(pt 616 1656)
+)
+(connector
+	(pt 584 1592)
+	(pt 584 1656)
+)
+(connector
+	(pt 616 1640)
+	(pt 592 1640)
+)
+(connector
+	(pt 592 1632)
+	(pt 568 1632)
+)
+(connector
+	(pt 368 1632)
+	(pt 368 1584)
+)
+(connector
+	(pt 784 1584)
+	(pt 368 1584)
+)
+(connector
+	(pt 368 1632)
+	(pt 384 1632)
+)
+(connector
+	(pt 592 1640)
+	(pt 592 1632)
+)
+(connector
+	(pt 344 1648)
+	(pt 384 1648)
+)
+(connector
+	(pt 176 1752)
+	(pt 176 1712)
+)
+(connector
+	(pt 608 1744)
+	(pt 616 1744)
+)
+(connector
+	(pt 584 1776)
+	(pt 616 1776)
+)
+(connector
+	(pt 584 1712)
+	(pt 584 1776)
+)
+(connector
+	(pt 616 1760)
+	(pt 592 1760)
+)
+(connector
+	(pt 592 1752)
+	(pt 568 1752)
+)
+(connector
+	(pt 368 1752)
+	(pt 368 1704)
+)
+(connector
+	(pt 784 1704)
+	(pt 368 1704)
+)
+(connector
+	(pt 368 1752)
+	(pt 384 1752)
+)
+(connector
+	(pt 592 1760)
+	(pt 592 1752)
+)
+(connector
+	(pt 344 1768)
+	(pt 384 1768)
+)
+(connector
+	(pt 176 1592)
+	(pt 584 1592)
+)
+(connector
+	(pt 176 1712)
+	(pt 584 1712)
+)
+(connector
+	(text "Input[10]" (rect 42 896 84 913)(font "Intel Clear" ))
+	(pt 32 912)
+	(pt 176 912)
+)
+(connector
+	(text "Input[11]" (rect 42 1016 84 1033)(font "Intel Clear" ))
+	(pt 32 1032)
+	(pt 176 1032)
+)
+(connector
+	(text "Input[12]" (rect 42 1136 84 1153)(font "Intel Clear" ))
+	(pt 32 1152)
+	(pt 176 1152)
+)
+(connector
+	(text "Input[13]" (rect 42 1256 84 1273)(font "Intel Clear" ))
+	(pt 32 1272)
+	(pt 176 1272)
+)
+(connector
+	(text "Input[14]" (rect 42 1376 84 1393)(font "Intel Clear" ))
+	(pt 32 1392)
+	(pt 176 1392)
+)
+(connector
+	(text "Input[15]" (rect 42 1496 84 1513)(font "Intel Clear" ))
+	(pt 32 1512)
+	(pt 176 1512)
+)
+(connector
+	(text "Input[16]" (rect 42 1616 84 1633)(font "Intel Clear" ))
+	(pt 32 1632)
+	(pt 176 1632)
+)
+(connector
+	(text "Input[17]" (rect 42 1736 84 1753)(font "Intel Clear" ))
+	(pt 32 1752)
+	(pt 176 1752)
+)
+(connector
+	(pt 784 864)
+	(pt 784 904)
+)
+(connector
+	(pt 784 984)
+	(pt 784 1024)
+)
+(connector
+	(pt 784 1104)
+	(pt 784 1144)
+)
+(connector
+	(pt 784 1224)
+	(pt 784 1264)
+)
+(connector
+	(pt 784 1344)
+	(pt 784 1384)
+)
+(connector
+	(pt 784 1464)
+	(pt 784 1504)
+)
+(connector
+	(pt 784 1584)
+	(pt 784 1624)
+)
+(connector
+	(pt 784 1704)
+	(pt 784 1744)
+)
+(connector
+	(pt 608 1144)
+	(pt 608 1264)
+)
+(connector
+	(pt 608 1384)
+	(pt 608 1504)
+)
+(connector
+	(pt 608 1504)
+	(pt 608 1624)
+)
+(connector
+	(pt 608 1624)
+	(pt 608 1744)
+)
+(connector
+	(pt 344 1528)
+	(pt 344 1648)
+)
+(connector
+	(pt 608 784)
+	(pt 608 904)
+)
+(connector
+	(pt 608 904)
+	(pt 608 1024)
+)
+(connector
+	(pt 608 1024)
+	(pt 608 1144)
+)
+(connector
+	(pt 344 1048)
+	(pt 344 1168)
+)
+(connector
+	(pt 176 1872)
+	(pt 176 1832)
+)
+(connector
+	(pt 608 1864)
+	(pt 616 1864)
+)
+(connector
+	(pt 584 1896)
+	(pt 616 1896)
+)
+(connector
+	(pt 584 1832)
+	(pt 584 1896)
+)
+(connector
+	(pt 616 1880)
+	(pt 592 1880)
+)
+(connector
+	(pt 592 1872)
+	(pt 568 1872)
+)
+(connector
+	(pt 368 1872)
+	(pt 368 1824)
+)
+(connector
+	(pt 784 1824)
+	(pt 368 1824)
+)
+(connector
+	(pt 368 1872)
+	(pt 384 1872)
+)
+(connector
+	(pt 592 1880)
+	(pt 592 1872)
+)
+(connector
+	(pt 344 1888)
+	(pt 384 1888)
+)
+(connector
+	(pt 176 1992)
+	(pt 176 1952)
+)
+(connector
+	(pt 608 1984)
+	(pt 616 1984)
+)
+(connector
+	(pt 584 2016)
+	(pt 616 2016)
+)
+(connector
+	(pt 584 1952)
+	(pt 584 2016)
+)
+(connector
+	(pt 616 2000)
+	(pt 592 2000)
+)
+(connector
+	(pt 592 1992)
+	(pt 568 1992)
+)
+(connector
+	(pt 368 1992)
+	(pt 368 1944)
+)
+(connector
+	(pt 784 1944)
+	(pt 368 1944)
+)
+(connector
+	(pt 368 1992)
+	(pt 384 1992)
+)
+(connector
+	(pt 592 2000)
+	(pt 592 1992)
+)
+(connector
+	(pt 344 2008)
+	(pt 384 2008)
+)
+(connector
+	(pt 176 1952)
+	(pt 584 1952)
+)
+(connector
+	(pt 176 2112)
+	(pt 176 2072)
+)
+(connector
+	(pt 608 2104)
+	(pt 616 2104)
+)
+(connector
+	(pt 584 2136)
+	(pt 616 2136)
+)
+(connector
+	(pt 584 2072)
+	(pt 584 2136)
+)
+(connector
+	(pt 616 2120)
+	(pt 592 2120)
+)
+(connector
+	(pt 592 2112)
+	(pt 568 2112)
+)
+(connector
+	(pt 368 2112)
+	(pt 368 2064)
+)
+(connector
+	(pt 784 2064)
+	(pt 368 2064)
+)
+(connector
+	(pt 368 2112)
+	(pt 384 2112)
+)
+(connector
+	(pt 592 2120)
+	(pt 592 2112)
+)
+(connector
+	(pt 344 2128)
+	(pt 384 2128)
+)
+(connector
+	(pt 176 2232)
+	(pt 176 2192)
+)
+(connector
+	(pt 608 2224)
+	(pt 616 2224)
+)
+(connector
+	(pt 584 2256)
+	(pt 616 2256)
+)
+(connector
+	(pt 584 2192)
+	(pt 584 2256)
+)
+(connector
+	(pt 616 2240)
+	(pt 592 2240)
+)
+(connector
+	(pt 592 2232)
+	(pt 568 2232)
+)
+(connector
+	(pt 368 2232)
+	(pt 368 2184)
+)
+(connector
+	(pt 784 2184)
+	(pt 368 2184)
+)
+(connector
+	(pt 368 2232)
+	(pt 384 2232)
+)
+(connector
+	(pt 592 2240)
+	(pt 592 2232)
+)
+(connector
+	(pt 344 2248)
+	(pt 384 2248)
+)
+(connector
+	(pt 176 2072)
+	(pt 584 2072)
+)
+(connector
+	(pt 176 2192)
+	(pt 584 2192)
+)
+(connector
+	(pt 176 2352)
+	(pt 176 2312)
+)
+(connector
+	(pt 608 2344)
+	(pt 616 2344)
+)
+(connector
+	(pt 584 2376)
+	(pt 616 2376)
+)
+(connector
+	(pt 584 2312)
+	(pt 584 2376)
+)
+(connector
+	(pt 616 2360)
+	(pt 592 2360)
+)
+(connector
+	(pt 592 2352)
+	(pt 568 2352)
+)
+(connector
+	(pt 368 2352)
+	(pt 368 2304)
+)
+(connector
+	(pt 368 2352)
+	(pt 384 2352)
+)
+(connector
+	(pt 592 2360)
+	(pt 592 2352)
+)
+(connector
+	(pt 344 2368)
+	(pt 384 2368)
+)
+(connector
+	(pt 176 2472)
+	(pt 176 2432)
+)
+(connector
+	(pt 608 2464)
+	(pt 616 2464)
+)
+(connector
+	(pt 584 2496)
+	(pt 616 2496)
+)
+(connector
+	(pt 584 2432)
+	(pt 584 2496)
+)
+(connector
+	(pt 616 2480)
+	(pt 592 2480)
+)
+(connector
+	(pt 592 2472)
+	(pt 568 2472)
+)
+(connector
+	(pt 368 2472)
+	(pt 368 2424)
+)
+(connector
+	(pt 784 2424)
+	(pt 368 2424)
+)
+(connector
+	(pt 368 2472)
+	(pt 384 2472)
+)
+(connector
+	(pt 592 2480)
+	(pt 592 2472)
+)
+(connector
+	(pt 344 2488)
+	(pt 384 2488)
+)
+(connector
+	(pt 176 2432)
+	(pt 584 2432)
+)
+(connector
+	(pt 176 2592)
+	(pt 176 2552)
+)
+(connector
+	(pt 608 2584)
+	(pt 616 2584)
+)
+(connector
+	(pt 584 2616)
+	(pt 616 2616)
+)
+(connector
+	(pt 584 2552)
+	(pt 584 2616)
+)
+(connector
+	(pt 616 2600)
+	(pt 592 2600)
+)
+(connector
+	(pt 592 2592)
+	(pt 568 2592)
+)
+(connector
+	(pt 368 2592)
+	(pt 368 2544)
+)
+(connector
+	(pt 784 2544)
+	(pt 368 2544)
+)
+(connector
+	(pt 368 2592)
+	(pt 384 2592)
+)
+(connector
+	(pt 592 2600)
+	(pt 592 2592)
+)
+(connector
+	(pt 344 2608)
+	(pt 384 2608)
+)
+(connector
+	(pt 176 2712)
+	(pt 176 2672)
+)
+(connector
+	(pt 608 2704)
+	(pt 616 2704)
+)
+(connector
+	(pt 584 2736)
+	(pt 616 2736)
+)
+(connector
+	(pt 584 2672)
+	(pt 584 2736)
+)
+(connector
+	(pt 616 2720)
+	(pt 592 2720)
+)
+(connector
+	(pt 592 2712)
+	(pt 568 2712)
+)
+(connector
+	(pt 368 2712)
+	(pt 368 2664)
+)
+(connector
+	(pt 784 2664)
+	(pt 368 2664)
+)
+(connector
+	(pt 368 2712)
+	(pt 384 2712)
+)
+(connector
+	(pt 592 2720)
+	(pt 592 2712)
+)
+(connector
+	(pt 344 2728)
+	(pt 384 2728)
+)
+(connector
+	(pt 176 2552)
+	(pt 584 2552)
+)
+(connector
+	(pt 176 2672)
+	(pt 584 2672)
+)
+(connector
+	(text "Input[18]" (rect 42 1856 84 1873)(font "Intel Clear" ))
+	(pt 32 1872)
+	(pt 176 1872)
+)
+(connector
+	(text "Input[19]" (rect 42 1976 84 1993)(font "Intel Clear" ))
+	(pt 32 1992)
+	(pt 176 1992)
+)
+(connector
+	(text "Input[20]" (rect 42 2096 84 2113)(font "Intel Clear" ))
+	(pt 32 2112)
+	(pt 176 2112)
+)
+(connector
+	(text "Input[21]" (rect 42 2216 84 2233)(font "Intel Clear" ))
+	(pt 32 2232)
+	(pt 176 2232)
+)
+(connector
+	(text "Input[22]" (rect 42 2336 84 2353)(font "Intel Clear" ))
+	(pt 32 2352)
+	(pt 176 2352)
+)
+(connector
+	(text "Input[23]" (rect 42 2456 84 2473)(font "Intel Clear" ))
+	(pt 32 2472)
+	(pt 176 2472)
+)
+(connector
+	(text "Input[24]" (rect 42 2576 84 2593)(font "Intel Clear" ))
+	(pt 32 2592)
+	(pt 176 2592)
+)
+(connector
+	(text "Input[25]" (rect 42 2696 84 2713)(font "Intel Clear" ))
+	(pt 32 2712)
+	(pt 176 2712)
+)
+(connector
+	(pt 784 1824)
+	(pt 784 1864)
+)
+(connector
+	(pt 784 1944)
+	(pt 784 1984)
+)
+(connector
+	(pt 784 2064)
+	(pt 784 2104)
+)
+(connector
+	(pt 784 2184)
+	(pt 784 2224)
+)
+(connector
+	(pt 784 2304)
+	(pt 784 2344)
+)
+(connector
+	(pt 784 2424)
+	(pt 784 2464)
+)
+(connector
+	(pt 784 2544)
+	(pt 784 2584)
+)
+(connector
+	(pt 784 2664)
+	(pt 784 2704)
+)
+(connector
+	(pt 608 2104)
+	(pt 608 2224)
+)
+(connector
+	(pt 608 2344)
+	(pt 608 2464)
+)
+(connector
+	(pt 608 2464)
+	(pt 608 2584)
+)
+(connector
+	(pt 608 2584)
+	(pt 608 2704)
+)
+(connector
+	(pt 344 2488)
+	(pt 344 2608)
+)
+(connector
+	(pt 608 1744)
+	(pt 608 1864)
+)
+(connector
+	(pt 608 1864)
+	(pt 608 1984)
+)
+(connector
+	(pt 608 1984)
+	(pt 608 2104)
+)
+(connector
+	(pt 344 2008)
+	(pt 344 2128)
+)
+(connector
+	(pt 176 2832)
+	(pt 176 2792)
+)
+(connector
+	(pt 608 2824)
+	(pt 616 2824)
+)
+(connector
+	(pt 584 2856)
+	(pt 616 2856)
+)
+(connector
+	(pt 584 2792)
+	(pt 584 2856)
+)
+(connector
+	(pt 616 2840)
+	(pt 592 2840)
+)
+(connector
+	(pt 592 2832)
+	(pt 568 2832)
+)
+(connector
+	(pt 368 2832)
+	(pt 368 2784)
+)
+(connector
+	(pt 784 2784)
+	(pt 368 2784)
+)
+(connector
+	(pt 368 2832)
+	(pt 384 2832)
+)
+(connector
+	(pt 592 2840)
+	(pt 592 2832)
+)
+(connector
+	(pt 344 2848)
+	(pt 384 2848)
+)
+(connector
+	(pt 176 2952)
+	(pt 176 2912)
+)
+(connector
+	(pt 608 2944)
+	(pt 616 2944)
+)
+(connector
+	(pt 584 2976)
+	(pt 616 2976)
+)
+(connector
+	(pt 584 2912)
+	(pt 584 2976)
+)
+(connector
+	(pt 616 2960)
+	(pt 592 2960)
+)
+(connector
+	(pt 592 2952)
+	(pt 568 2952)
+)
+(connector
+	(pt 368 2952)
+	(pt 368 2904)
+)
+(connector
+	(pt 784 2904)
+	(pt 368 2904)
+)
+(connector
+	(pt 368 2952)
+	(pt 384 2952)
+)
+(connector
+	(pt 592 2960)
+	(pt 592 2952)
+)
+(connector
+	(pt 344 2968)
+	(pt 384 2968)
+)
+(connector
+	(pt 176 2912)
+	(pt 584 2912)
+)
+(connector
+	(pt 176 3072)
+	(pt 176 3032)
+)
+(connector
+	(pt 608 3064)
+	(pt 616 3064)
+)
+(connector
+	(pt 584 3096)
+	(pt 616 3096)
+)
+(connector
+	(pt 584 3032)
+	(pt 584 3096)
+)
+(connector
+	(pt 616 3080)
+	(pt 592 3080)
+)
+(connector
+	(pt 592 3072)
+	(pt 568 3072)
+)
+(connector
+	(pt 368 3072)
+	(pt 368 3024)
+)
+(connector
+	(pt 784 3024)
+	(pt 368 3024)
+)
+(connector
+	(pt 368 3072)
+	(pt 384 3072)
+)
+(connector
+	(pt 592 3080)
+	(pt 592 3072)
+)
+(connector
+	(pt 344 3088)
+	(pt 384 3088)
+)
+(connector
+	(pt 176 3192)
+	(pt 176 3152)
+)
+(connector
+	(pt 608 3184)
+	(pt 616 3184)
+)
+(connector
+	(pt 584 3216)
+	(pt 616 3216)
+)
+(connector
+	(pt 584 3152)
+	(pt 584 3216)
+)
+(connector
+	(pt 616 3200)
+	(pt 592 3200)
+)
+(connector
+	(pt 592 3192)
+	(pt 568 3192)
+)
+(connector
+	(pt 368 3192)
+	(pt 368 3144)
+)
+(connector
+	(pt 784 3144)
+	(pt 368 3144)
+)
+(connector
+	(pt 368 3192)
+	(pt 384 3192)
+)
+(connector
+	(pt 592 3200)
+	(pt 592 3192)
+)
+(connector
+	(pt 344 3208)
+	(pt 384 3208)
+)
+(connector
+	(pt 176 3032)
+	(pt 584 3032)
+)
+(connector
+	(pt 176 3152)
+	(pt 584 3152)
+)
+(connector
+	(pt 176 3312)
+	(pt 176 3272)
+)
+(connector
+	(pt 608 3304)
+	(pt 616 3304)
+)
+(connector
+	(pt 584 3336)
+	(pt 616 3336)
+)
+(connector
+	(pt 584 3272)
+	(pt 584 3336)
+)
+(connector
+	(pt 616 3320)
+	(pt 592 3320)
+)
+(connector
+	(pt 592 3312)
+	(pt 568 3312)
+)
+(connector
+	(pt 368 3312)
+	(pt 368 3264)
+)
+(connector
+	(pt 368 3312)
+	(pt 384 3312)
+)
+(connector
+	(pt 592 3320)
+	(pt 592 3312)
+)
+(connector
+	(pt 344 3328)
+	(pt 384 3328)
+)
+(connector
+	(pt 176 3432)
+	(pt 176 3392)
+)
+(connector
+	(pt 608 3424)
+	(pt 616 3424)
+)
+(connector
+	(pt 584 3456)
+	(pt 616 3456)
+)
+(connector
+	(pt 584 3392)
+	(pt 584 3456)
+)
+(connector
+	(pt 616 3440)
+	(pt 592 3440)
+)
+(connector
+	(pt 592 3432)
+	(pt 568 3432)
+)
+(connector
+	(pt 368 3432)
+	(pt 368 3384)
+)
+(connector
+	(pt 784 3384)
+	(pt 368 3384)
+)
+(connector
+	(pt 368 3432)
+	(pt 384 3432)
+)
+(connector
+	(pt 592 3440)
+	(pt 592 3432)
+)
+(connector
+	(pt 344 3448)
+	(pt 384 3448)
+)
+(connector
+	(pt 176 3392)
+	(pt 584 3392)
+)
+(connector
+	(text "Input[26]" (rect 42 2816 84 2833)(font "Intel Clear" ))
+	(pt 32 2832)
+	(pt 176 2832)
+)
+(connector
+	(text "Input[27]" (rect 42 2936 84 2953)(font "Intel Clear" ))
+	(pt 32 2952)
+	(pt 176 2952)
+)
+(connector
+	(text "Input[28]" (rect 42 3056 84 3073)(font "Intel Clear" ))
+	(pt 32 3072)
+	(pt 176 3072)
+)
+(connector
+	(text "Input[29]" (rect 42 3176 84 3193)(font "Intel Clear" ))
+	(pt 32 3192)
+	(pt 176 3192)
+)
+(connector
+	(text "Input[30]" (rect 42 3296 84 3313)(font "Intel Clear" ))
+	(pt 32 3312)
+	(pt 176 3312)
+)
+(connector
+	(text "Input[31]" (rect 42 3416 84 3433)(font "Intel Clear" ))
+	(pt 32 3432)
+	(pt 176 3432)
+)
+(connector
+	(pt 784 2784)
+	(pt 784 2824)
+)
+(connector
+	(pt 784 2904)
+	(pt 784 2944)
+)
+(connector
+	(pt 784 3024)
+	(pt 784 3064)
+)
+(connector
+	(pt 784 3144)
+	(pt 784 3184)
+)
+(connector
+	(pt 784 3264)
+	(pt 784 3304)
+)
+(connector
+	(pt 784 3384)
+	(pt 784 3424)
+)
+(connector
+	(pt 608 3064)
+	(pt 608 3184)
+)
+(connector
+	(pt 608 2704)
+	(pt 608 2824)
+)
+(connector
+	(pt 608 2824)
+	(pt 608 2944)
+)
+(connector
+	(pt 608 2944)
+	(pt 608 3064)
+)
+(connector
+	(pt 344 2968)
+	(pt 344 3088)
+)
+(connector
+	(pt 608 3304)
+	(pt 608 3424)
+)
+(connector
+	(pt 176 3272)
+	(pt 584 3272)
+)
+(connector
+	(pt 344 3088)
+	(pt 344 3208)
+)
+(connector
+	(pt 344 3208)
+	(pt 344 3328)
+)
+(connector
+	(pt 344 3328)
+	(pt 344 3448)
+)
+(connector
+	(pt 608 3184)
+	(pt 608 3304)
+)
+(connector
+	(pt 368 3264)
+	(pt 784 3264)
+)
+(connector
+	(pt 176 2792)
+	(pt 584 2792)
+)
+(connector
+	(pt 344 2608)
+	(pt 344 2728)
+)
+(connector
+	(pt 344 2728)
+	(pt 344 2848)
+)
+(connector
+	(pt 344 2848)
+	(pt 344 2968)
+)
+(connector
+	(pt 608 2224)
+	(pt 608 2344)
+)
+(connector
+	(pt 368 2304)
+	(pt 784 2304)
+)
+(connector
+	(pt 176 2312)
+	(pt 584 2312)
+)
+(connector
+	(pt 344 2128)
+	(pt 344 2248)
+)
+(connector
+	(pt 344 2248)
+	(pt 344 2368)
+)
+(connector
+	(pt 344 2368)
+	(pt 344 2488)
+)
+(connector
+	(pt 176 1832)
+	(pt 584 1832)
+)
+(connector
+	(pt 344 1648)
+	(pt 344 1768)
+)
+(connector
+	(pt 344 1768)
+	(pt 344 1888)
+)
+(connector
+	(pt 344 1888)
+	(pt 344 2008)
+)
+(connector
+	(pt 608 1264)
+	(pt 608 1384)
+)
+(connector
+	(pt 784 1344)
+	(pt 368 1344)
+)
+(connector
+	(pt 176 1352)
+	(pt 584 1352)
+)
+(connector
+	(pt 344 1168)
+	(pt 344 1288)
+)
+(connector
+	(pt 344 1288)
+	(pt 344 1408)
+)
+(connector
+	(pt 344 1408)
+	(pt 344 1528)
+)
+(connector
+	(pt 176 872)
+	(pt 584 872)
+)
+(connector
+	(pt 344 688)
+	(pt 344 808)
+)
+(connector
+	(pt 344 808)
+	(pt 344 928)
+)
+(connector
+	(pt 344 928)
+	(pt 344 1048)
+)
+(connector
+	(pt 176 392)
+	(pt 584 392)
+)
+(connector
+	(pt 344 208)
+	(pt 344 328)
+)
+(connector
+	(pt 344 328)
+	(pt 344 448)
+)
+(connector
+	(pt 344 448)
+	(pt 344 568)
+)
+(connector
+	(pt 608 304)
+	(pt 608 424)
+)
+(connector
+	(pt 368 384)
+	(pt 784 384)
+)
+(connector
+	(pt 752 -296)
+	(pt 784 -296)
+)
+(connector
+	(text "OutputRes[0]" (rect 826 -312 889 -295)(font "Intel Clear" ))
+	(pt 784 -296)
+	(pt 888 -296)
+)
+(connector
+	(pt 752 -56)
+	(pt 784 -56)
+)
+(connector
+	(text "OutputRes[2]" (rect 826 -72 889 -55)(font "Intel Clear" ))
+	(pt 784 -56)
+	(pt 888 -56)
+)
+(connector
+	(pt 888 -56)
+	(pt 888 64)
+	(bus)
+)
+(connector
+	(pt 752 64)
+	(pt 784 64)
+)
+(connector
+	(text "OutputRes[3]" (rect 826 48 889 65)(font "Intel Clear" ))
+	(pt 784 64)
+	(pt 888 64)
+)
+(connector
+	(pt 888 64)
+	(pt 888 184)
+	(bus)
+)
+(connector
+	(pt 752 184)
+	(pt 784 184)
+)
+(connector
+	(text "OutputRes[4]" (rect 826 168 889 185)(font "Intel Clear" ))
+	(pt 784 184)
+	(pt 888 184)
+)
+(connector
+	(pt 888 184)
+	(pt 888 304)
+	(bus)
+)
+(connector
+	(pt 752 304)
+	(pt 784 304)
+)
+(connector
+	(text "OutputRes[5]" (rect 826 288 889 305)(font "Intel Clear" ))
+	(pt 784 304)
+	(pt 888 304)
+)
+(connector
+	(pt 888 304)
+	(pt 888 424)
+	(bus)
+)
+(connector
+	(pt 752 424)
+	(pt 784 424)
+)
+(connector
+	(text "OutputRes[6]" (rect 826 408 889 425)(font "Intel Clear" ))
+	(pt 784 424)
+	(pt 888 424)
+)
+(connector
+	(pt 888 424)
+	(pt 888 544)
+	(bus)
+)
+(connector
+	(pt 752 544)
+	(pt 784 544)
+)
+(connector
+	(text "OutputRes[7]" (rect 826 528 889 545)(font "Intel Clear" ))
+	(pt 784 544)
+	(pt 888 544)
+)
+(connector
+	(pt 888 544)
+	(pt 888 664)
+	(bus)
+)
+(connector
+	(pt 752 664)
+	(pt 784 664)
+)
+(connector
+	(text "OutputRes[8]" (rect 826 648 889 665)(font "Intel Clear" ))
+	(pt 784 664)
+	(pt 888 664)
+)
+(connector
+	(pt 888 664)
+	(pt 888 784)
+	(bus)
+)
+(connector
+	(pt 752 784)
+	(pt 784 784)
+)
+(connector
+	(text "OutputRes[9]" (rect 826 768 889 785)(font "Intel Clear" ))
+	(pt 784 784)
+	(pt 888 784)
+)
+(connector
+	(pt 888 784)
+	(pt 888 904)
+	(bus)
+)
+(connector
+	(pt 752 904)
+	(pt 784 904)
+)
+(connector
+	(text "OutputRes[10]" (rect 826 888 895 905)(font "Intel Clear" ))
+	(pt 784 904)
+	(pt 888 904)
+)
+(connector
+	(pt 888 904)
+	(pt 888 1024)
+	(bus)
+)
+(connector
+	(pt 752 1024)
+	(pt 784 1024)
+)
+(connector
+	(text "OutputRes[11]" (rect 826 1008 895 1025)(font "Intel Clear" ))
+	(pt 784 1024)
+	(pt 888 1024)
+)
+(connector
+	(pt 888 1024)
+	(pt 888 1144)
+	(bus)
+)
+(connector
+	(pt 752 1144)
+	(pt 784 1144)
+)
+(connector
+	(text "OutputRes[12]" (rect 826 1128 895 1145)(font "Intel Clear" ))
+	(pt 784 1144)
+	(pt 888 1144)
+)
+(connector
+	(pt 888 1144)
+	(pt 888 1264)
+	(bus)
+)
+(connector
+	(pt 752 1264)
+	(pt 784 1264)
+)
+(connector
+	(text "OutputRes[13]" (rect 826 1248 895 1265)(font "Intel Clear" ))
+	(pt 784 1264)
+	(pt 888 1264)
+)
+(connector
+	(pt 888 1264)
+	(pt 888 1384)
+	(bus)
+)
+(connector
+	(pt 752 1384)
+	(pt 784 1384)
+)
+(connector
+	(text "OutputRes[14]" (rect 826 1368 895 1385)(font "Intel Clear" ))
+	(pt 784 1384)
+	(pt 888 1384)
+)
+(connector
+	(pt 888 1384)
+	(pt 888 1504)
+	(bus)
+)
+(connector
+	(pt 752 1504)
+	(pt 784 1504)
+)
+(connector
+	(text "OutputRes[15]" (rect 826 1488 895 1505)(font "Intel Clear" ))
+	(pt 784 1504)
+	(pt 888 1504)
+)
+(connector
+	(pt 888 1504)
+	(pt 888 1624)
+	(bus)
+)
+(connector
+	(pt 752 1624)
+	(pt 784 1624)
+)
+(connector
+	(text "OutputRes[16]" (rect 826 1608 895 1625)(font "Intel Clear" ))
+	(pt 784 1624)
+	(pt 888 1624)
+)
+(connector
+	(pt 888 1624)
+	(pt 888 1744)
+	(bus)
+)
+(connector
+	(pt 752 1744)
+	(pt 784 1744)
+)
+(connector
+	(text "OutputRes[17]" (rect 826 1728 895 1745)(font "Intel Clear" ))
+	(pt 784 1744)
+	(pt 888 1744)
+)
+(connector
+	(pt 888 1744)
+	(pt 888 1864)
+	(bus)
+)
+(connector
+	(pt 752 1864)
+	(pt 784 1864)
+)
+(connector
+	(text "OutputRes[18]" (rect 826 1848 895 1865)(font "Intel Clear" ))
+	(pt 784 1864)
+	(pt 888 1864)
+)
+(connector
+	(pt 888 1864)
+	(pt 888 1984)
+	(bus)
+)
+(connector
+	(pt 752 1984)
+	(pt 784 1984)
+)
+(connector
+	(text "OutputRes[19]" (rect 826 1968 895 1985)(font "Intel Clear" ))
+	(pt 784 1984)
+	(pt 888 1984)
+)
+(connector
+	(pt 888 1984)
+	(pt 888 2104)
+	(bus)
+)
+(connector
+	(pt 752 2104)
+	(pt 784 2104)
+)
+(connector
+	(text "OutputRes[20]" (rect 826 2088 895 2105)(font "Intel Clear" ))
+	(pt 784 2104)
+	(pt 888 2104)
+)
+(connector
+	(pt 888 2104)
+	(pt 888 2224)
+	(bus)
+)
+(connector
+	(pt 752 2224)
+	(pt 784 2224)
+)
+(connector
+	(text "OutputRes[21]" (rect 826 2208 895 2225)(font "Intel Clear" ))
+	(pt 784 2224)
+	(pt 888 2224)
+)
+(connector
+	(pt 888 2224)
+	(pt 888 2344)
+	(bus)
+)
+(connector
+	(pt 752 2344)
+	(pt 784 2344)
+)
+(connector
+	(text "OutputRes[22]" (rect 826 2328 895 2345)(font "Intel Clear" ))
+	(pt 784 2344)
+	(pt 888 2344)
+)
+(connector
+	(pt 888 2344)
+	(pt 888 2464)
+	(bus)
+)
+(connector
+	(pt 752 2464)
+	(pt 784 2464)
+)
+(connector
+	(text "OutputRes[23]" (rect 826 2448 895 2465)(font "Intel Clear" ))
+	(pt 784 2464)
+	(pt 888 2464)
+)
+(connector
+	(pt 888 2464)
+	(pt 888 2584)
+	(bus)
+)
+(connector
+	(pt 752 2584)
+	(pt 784 2584)
+)
+(connector
+	(text "OutputRes[24]" (rect 826 2568 895 2585)(font "Intel Clear" ))
+	(pt 784 2584)
+	(pt 888 2584)
+)
+(connector
+	(pt 888 2584)
+	(pt 888 2704)
+	(bus)
+)
+(connector
+	(pt 752 2704)
+	(pt 784 2704)
+)
+(connector
+	(text "OutputRes[25]" (rect 826 2688 895 2705)(font "Intel Clear" ))
+	(pt 784 2704)
+	(pt 888 2704)
+)
+(connector
+	(pt 888 2704)
+	(pt 888 2824)
+	(bus)
+)
+(connector
+	(pt 752 2824)
+	(pt 784 2824)
+)
+(connector
+	(text "OutputRes[26]" (rect 826 2808 895 2825)(font "Intel Clear" ))
+	(pt 784 2824)
+	(pt 888 2824)
+)
+(connector
+	(pt 888 2824)
+	(pt 888 2944)
+	(bus)
+)
+(connector
+	(pt 752 2944)
+	(pt 784 2944)
+)
+(connector
+	(text "OutputRes[27]" (rect 826 2928 895 2945)(font "Intel Clear" ))
+	(pt 784 2944)
+	(pt 888 2944)
+)
+(connector
+	(pt 888 2944)
+	(pt 888 3064)
+	(bus)
+)
+(connector
+	(pt 752 3064)
+	(pt 784 3064)
+)
+(connector
+	(text "OutputRes[28]" (rect 826 3048 895 3065)(font "Intel Clear" ))
+	(pt 784 3064)
+	(pt 888 3064)
+)
+(connector
+	(pt 752 3424)
+	(pt 784 3424)
+)
+(connector
+	(text "OutputRes[31]" (rect 826 3408 895 3425)(font "Intel Clear" ))
+	(pt 784 3424)
+	(pt 888 3424)
+)
+(connector
+	(pt 888 3304)
+	(pt 888 3424)
+	(bus)
+)
+(connector
+	(pt 752 3304)
+	(pt 784 3304)
+)
+(connector
+	(text "OutputRes[30]" (rect 826 3288 895 3305)(font "Intel Clear" ))
+	(pt 784 3304)
+	(pt 888 3304)
+)
+(connector
+	(pt 888 3064)
+	(pt 888 3184)
+	(bus)
+)
+(connector
+	(pt 888 3184)
+	(pt 888 3304)
+	(bus)
+)
+(connector
+	(pt 752 3184)
+	(pt 784 3184)
+)
+(connector
+	(text "OutputRes[29]" (rect 826 3168 895 3185)(font "Intel Clear" ))
+	(pt 784 3184)
+	(pt 888 3184)
+)
+(connector
+	(pt 752 -176)
+	(pt 784 -176)
+)
+(connector
+	(text "OutputRes[1]" (rect 826 -192 889 -175)(font "Intel Clear" ))
+	(pt 784 -176)
+	(pt 888 -176)
+)
+(connector
+	(pt 976 -296)
+	(pt 888 -296)
+	(bus)
+)
+(connector
+	(pt 888 -296)
+	(pt 888 -176)
+	(bus)
+)
+(connector
+	(pt 888 -176)
+	(pt 888 -56)
+	(bus)
+)
+(junction (pt 32 2712))
+(junction (pt 32 -288))
+(junction (pt 32 -168))
+(junction (pt 32 -48))
+(junction (pt 32 72))
+(junction (pt 32 192))
+(junction (pt 32 312))
+(junction (pt 32 432))
+(junction (pt 32 552))
+(junction (pt 32 672))
+(junction (pt 32 792))
+(junction (pt 32 912))
+(junction (pt 32 1032))
+(junction (pt 32 1152))
+(junction (pt 32 1272))
+(junction (pt 32 1392))
+(junction (pt 32 1512))
+(junction (pt 32 1632))
+(junction (pt 32 1752))
+(junction (pt 32 1872))
+(junction (pt 32 1992))
+(junction (pt 32 2112))
+(junction (pt 32 2232))
+(junction (pt 32 2352))
+(junction (pt 32 2472))
+(junction (pt 32 2592))
+(junction (pt 32 2832))
+(junction (pt 32 2952))
+(junction (pt 32 3072))
+(junction (pt 32 3192))
+(junction (pt 32 3312))
+(junction (pt 784 -296))
+(junction (pt 784 -176))
+(junction (pt 608 -296))
+(junction (pt 784 -56))
+(junction (pt 608 -176))
+(junction (pt 784 64))
+(junction (pt 608 -56))
+(junction (pt 344 88))
+(junction (pt 344 -152))
+(junction (pt 344 -32))
+(junction (pt 784 184))
+(junction (pt 784 304))
+(junction (pt 608 184))
+(junction (pt 344 208))
+(junction (pt 608 64))
+(junction (pt 608 304))
+(junction (pt 784 424))
+(junction (pt 784 544))
+(junction (pt 784 664))
+(junction (pt 784 784))
+(junction (pt 344 568))
+(junction (pt 344 688))
+(junction (pt 608 544))
+(junction (pt 608 664))
+(junction (pt 608 784))
+(junction (pt 608 424))
+(junction (pt 784 904))
+(junction (pt 784 1024))
+(junction (pt 784 1144))
+(junction (pt 784 1264))
+(junction (pt 344 1048))
+(junction (pt 344 1168))
+(junction (pt 608 1024))
+(junction (pt 608 1144))
+(junction (pt 784 1384))
+(junction (pt 784 1504))
+(junction (pt 784 1624))
+(junction (pt 784 1744))
+(junction (pt 608 1744))
+(junction (pt 608 1264))
+(junction (pt 608 1384))
+(junction (pt 608 1504))
+(junction (pt 608 1624))
+(junction (pt 344 1528))
+(junction (pt 344 1648))
+(junction (pt 608 904))
+(junction (pt 784 1864))
+(junction (pt 784 1984))
+(junction (pt 784 2104))
+(junction (pt 784 2224))
+(junction (pt 344 2008))
+(junction (pt 344 2128))
+(junction (pt 608 1984))
+(junction (pt 608 2104))
+(junction (pt 784 2344))
+(junction (pt 784 2464))
+(junction (pt 784 2584))
+(junction (pt 784 2704))
+(junction (pt 608 2704))
+(junction (pt 608 2224))
+(junction (pt 608 2344))
+(junction (pt 608 2464))
+(junction (pt 608 2584))
+(junction (pt 344 2488))
+(junction (pt 344 2608))
+(junction (pt 608 1864))
+(junction (pt 784 2824))
+(junction (pt 784 2944))
+(junction (pt 784 3064))
+(junction (pt 784 3184))
+(junction (pt 344 2968))
+(junction (pt 344 3088))
+(junction (pt 608 2944))
+(junction (pt 608 3064))
+(junction (pt 784 3304))
+(junction (pt 784 3424))
+(junction (pt 608 3184))
+(junction (pt 608 3304))
+(junction (pt 608 2824))
+(junction (pt 344 3208))
+(junction (pt 344 3328))
+(junction (pt 344 2728))
+(junction (pt 344 2848))
+(junction (pt 344 2368))
+(junction (pt 344 2248))
+(junction (pt 344 1768))
+(junction (pt 344 1888))
+(junction (pt 344 1288))
+(junction (pt 344 1408))
+(junction (pt 344 808))
+(junction (pt 344 928))
+(junction (pt 344 328))
+(junction (pt 344 448))
+(junction (pt 888 -56))
+(junction (pt 888 64))
+(junction (pt 888 184))
+(junction (pt 888 304))
+(junction (pt 888 424))
+(junction (pt 888 544))
+(junction (pt 888 664))
+(junction (pt 888 784))
+(junction (pt 888 904))
+(junction (pt 888 1024))
+(junction (pt 888 1144))
+(junction (pt 888 1264))
+(junction (pt 888 1384))
+(junction (pt 888 1504))
+(junction (pt 888 1624))
+(junction (pt 888 1744))
+(junction (pt 888 1864))
+(junction (pt 888 1984))
+(junction (pt 888 2104))
+(junction (pt 888 2224))
+(junction (pt 888 2344))
+(junction (pt 888 2464))
+(junction (pt 888 2584))
+(junction (pt 888 2704))
+(junction (pt 888 2824))
+(junction (pt 888 2944))
+(junction (pt 888 3064))
+(junction (pt 888 3184))
+(junction (pt 888 3304))
+(junction (pt 888 -296))
+(junction (pt 888 -176))

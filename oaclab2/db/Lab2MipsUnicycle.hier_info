@@ -1,0 +1,2762 @@
+|alu32bit
+Result0 <= mini_alu:inst.Result
+Selector0 => mini_alu:inst.Selector0
+Selector0 => mini_alu:inst63.Selector0
+Selector0 => mini_alu:inst61.Selector0
+Selector0 => mini_alu:inst5900.Selector0
+Selector0 => mini_alu:inst5700.Selector0
+Selector0 => mini_alu:inst55.Selector0
+Selector0 => mini_alu:inst53.Selector0
+Selector0 => mini_alu:inst51.Selector0
+Selector0 => mini_alu:inst49.Selector0
+Selector0 => mini_alu:inst47.Selector0
+Selector0 => mini_alu:inst45.Selector0
+Selector0 => mini_alu:inst43.Selector0
+Selector0 => mini_alu:inst41.Selector0
+Selector0 => mini_alu:inst39.Selector0
+Selector0 => mini_alu:inst37.Selector0
+Selector0 => mini_alu:inst35.Selector0
+Selector0 => mini_alu:inst33.Selector0
+Selector0 => mini_alu:inst31.Selector0
+Selector0 => mini_alu:inst29.Selector0
+Selector0 => mini_alu:inst27.Selector0
+Selector0 => mini_alu:inst25.Selector0
+Selector0 => mini_alu:inst23.Selector0
+Selector0 => mini_alu:inst21.Selector0
+Selector0 => mini_alu:inst19.Selector0
+Selector0 => mini_alu:inst17.Selector0
+Selector0 => mini_alu:inst15.Selector0
+Selector0 => mini_alu:inst13.Selector0
+Selector0 => mini_alu:inst11.Selector0
+Selector0 => mini_alu:inst900.Selector0
+Selector0 => mini_alu:inst700.Selector0
+Selector0 => mini_alu:inst5.Selector0
+Selector0 => mini_alu:inst3.Selector0
+Selector1 => mini_alu:inst.Selector1
+Selector1 => mini_alu:inst63.Selector1
+Selector1 => mini_alu:inst61.Selector1
+Selector1 => mini_alu:inst5900.Selector1
+Selector1 => mini_alu:inst5700.Selector1
+Selector1 => mini_alu:inst55.Selector1
+Selector1 => mini_alu:inst53.Selector1
+Selector1 => mini_alu:inst51.Selector1
+Selector1 => mini_alu:inst49.Selector1
+Selector1 => mini_alu:inst47.Selector1
+Selector1 => mini_alu:inst45.Selector1
+Selector1 => mini_alu:inst43.Selector1
+Selector1 => mini_alu:inst41.Selector1
+Selector1 => mini_alu:inst39.Selector1
+Selector1 => mini_alu:inst37.Selector1
+Selector1 => mini_alu:inst35.Selector1
+Selector1 => mini_alu:inst33.Selector1
+Selector1 => mini_alu:inst31.Selector1
+Selector1 => mini_alu:inst29.Selector1
+Selector1 => mini_alu:inst27.Selector1
+Selector1 => mini_alu:inst25.Selector1
+Selector1 => mini_alu:inst23.Selector1
+Selector1 => mini_alu:inst21.Selector1
+Selector1 => mini_alu:inst19.Selector1
+Selector1 => mini_alu:inst17.Selector1
+Selector1 => mini_alu:inst15.Selector1
+Selector1 => mini_alu:inst13.Selector1
+Selector1 => mini_alu:inst11.Selector1
+Selector1 => mini_alu:inst900.Selector1
+Selector1 => mini_alu:inst700.Selector1
+Selector1 => mini_alu:inst5.Selector1
+Selector1 => mini_alu:inst3.Selector1
+Input1_0 => mini_alu:inst.Input1
+InvertInput1 => mini_alu:inst.InvertInput1
+InvertInput1 => mini_alu:inst63.InvertInput1
+InvertInput1 => mini_alu:inst61.InvertInput1
+InvertInput1 => mini_alu:inst5900.InvertInput1
+InvertInput1 => mini_alu:inst5700.InvertInput1
+InvertInput1 => mini_alu:inst55.InvertInput1
+InvertInput1 => mini_alu:inst53.InvertInput1
+InvertInput1 => mini_alu:inst51.InvertInput1
+InvertInput1 => mini_alu:inst49.InvertInput1
+InvertInput1 => mini_alu:inst47.InvertInput1
+InvertInput1 => mini_alu:inst45.InvertInput1
+InvertInput1 => mini_alu:inst43.InvertInput1
+InvertInput1 => mini_alu:inst41.InvertInput1
+InvertInput1 => mini_alu:inst39.InvertInput1
+InvertInput1 => mini_alu:inst37.InvertInput1
+InvertInput1 => mini_alu:inst35.InvertInput1
+InvertInput1 => mini_alu:inst33.InvertInput1
+InvertInput1 => mini_alu:inst31.InvertInput1
+InvertInput1 => mini_alu:inst29.InvertInput1
+InvertInput1 => mini_alu:inst27.InvertInput1
+InvertInput1 => mini_alu:inst25.InvertInput1
+InvertInput1 => mini_alu:inst23.InvertInput1
+InvertInput1 => mini_alu:inst21.InvertInput1
+InvertInput1 => mini_alu:inst19.InvertInput1
+InvertInput1 => mini_alu:inst17.InvertInput1
+InvertInput1 => mini_alu:inst15.InvertInput1
+InvertInput1 => mini_alu:inst13.InvertInput1
+InvertInput1 => mini_alu:inst11.InvertInput1
+InvertInput1 => mini_alu:inst900.InvertInput1
+InvertInput1 => mini_alu:inst700.InvertInput1
+InvertInput1 => mini_alu:inst5.InvertInput1
+InvertInput1 => mini_alu:inst3.InvertInput1
+Input2_0 => mini_alu:inst.Input2
+InvertInput2 => mini_alu:inst.InvertInput2
+InvertInput2 => mini_alu:inst.Cin
+InvertInput2 => mini_alu:inst63.InvertInput2
+InvertInput2 => mini_alu:inst61.InvertInput2
+InvertInput2 => mini_alu:inst5900.InvertInput2
+InvertInput2 => mini_alu:inst5700.InvertInput2
+InvertInput2 => mini_alu:inst55.InvertInput2
+InvertInput2 => mini_alu:inst53.InvertInput2
+InvertInput2 => mini_alu:inst51.InvertInput2
+InvertInput2 => mini_alu:inst49.InvertInput2
+InvertInput2 => mini_alu:inst47.InvertInput2
+InvertInput2 => mini_alu:inst45.InvertInput2
+InvertInput2 => mini_alu:inst43.InvertInput2
+InvertInput2 => mini_alu:inst41.InvertInput2
+InvertInput2 => mini_alu:inst39.InvertInput2
+InvertInput2 => mini_alu:inst37.InvertInput2
+InvertInput2 => mini_alu:inst35.InvertInput2
+InvertInput2 => mini_alu:inst33.InvertInput2
+InvertInput2 => mini_alu:inst31.InvertInput2
+InvertInput2 => mini_alu:inst29.InvertInput2
+InvertInput2 => mini_alu:inst27.InvertInput2
+InvertInput2 => mini_alu:inst25.InvertInput2
+InvertInput2 => mini_alu:inst23.InvertInput2
+InvertInput2 => mini_alu:inst21.InvertInput2
+InvertInput2 => mini_alu:inst19.InvertInput2
+InvertInput2 => mini_alu:inst17.InvertInput2
+InvertInput2 => mini_alu:inst15.InvertInput2
+InvertInput2 => mini_alu:inst13.InvertInput2
+InvertInput2 => mini_alu:inst11.InvertInput2
+InvertInput2 => mini_alu:inst900.InvertInput2
+InvertInput2 => mini_alu:inst700.InvertInput2
+InvertInput2 => mini_alu:inst5.InvertInput2
+InvertInput2 => mini_alu:inst3.InvertInput2
+Input1_31 => mini_alu:inst63.Input1
+Input2_31 => mini_alu:inst63.Input2
+Input1_30 => mini_alu:inst61.Input1
+Input2_30 => mini_alu:inst61.Input2
+Input1_29 => mini_alu:inst5900.Input1
+Input2_29 => mini_alu:inst5900.Input2
+Input1_28 => mini_alu:inst5700.Input1
+Input2_28 => mini_alu:inst5700.Input2
+Input1_27 => mini_alu:inst55.Input1
+Input2_27 => mini_alu:inst55.Input2
+Input1_26 => mini_alu:inst53.Input1
+Input2_26 => mini_alu:inst53.Input2
+Input1_25 => mini_alu:inst51.Input1
+Input2_25 => mini_alu:inst51.Input2
+Input1_24 => mini_alu:inst49.Input1
+Input2_24 => mini_alu:inst49.Input2
+Input1_23 => mini_alu:inst47.Input1
+Input2_23 => mini_alu:inst47.Input2
+Input1_22 => mini_alu:inst45.Input1
+Input2_22 => mini_alu:inst45.Input2
+Input1_21 => mini_alu:inst43.Input1
+Input2_21 => mini_alu:inst43.Input2
+Input1_20 => mini_alu:inst41.Input1
+Input2_20 => mini_alu:inst41.Input2
+Input1_19 => mini_alu:inst39.Input1
+Input2_19 => mini_alu:inst39.Input2
+Input1_18 => mini_alu:inst37.Input1
+Input2_18 => mini_alu:inst37.Input2
+Input1_17 => mini_alu:inst35.Input1
+Input2_17 => mini_alu:inst35.Input2
+Input1_16 => mini_alu:inst33.Input1
+Input2_16 => mini_alu:inst33.Input2
+Input1_15 => mini_alu:inst31.Input1
+Input2_15 => mini_alu:inst31.Input2
+Input1_14 => mini_alu:inst29.Input1
+Input2_14 => mini_alu:inst29.Input2
+Input1_13 => mini_alu:inst27.Input1
+Input2_13 => mini_alu:inst27.Input2
+Input1_12 => mini_alu:inst25.Input1
+Input2_12 => mini_alu:inst25.Input2
+Input1_11 => mini_alu:inst23.Input1
+Input2_11 => mini_alu:inst23.Input2
+Input1_10 => mini_alu:inst21.Input1
+Input2_10 => mini_alu:inst21.Input2
+Input1_9 => mini_alu:inst19.Input1
+Input2_9 => mini_alu:inst19.Input2
+Input1_8 => mini_alu:inst17.Input1
+Input2_8 => mini_alu:inst17.Input2
+Input1_7 => mini_alu:inst15.Input1
+Input2_7 => mini_alu:inst15.Input2
+Input1_6 => mini_alu:inst13.Input1
+Input2_6 => mini_alu:inst13.Input2
+Input1_5 => mini_alu:inst11.Input1
+Input2_5 => mini_alu:inst11.Input2
+Input1_4 => mini_alu:inst900.Input1
+Input2_4 => mini_alu:inst900.Input2
+Input1_3 => mini_alu:inst700.Input1
+Input2_3 => mini_alu:inst700.Input2
+Input1_2 => mini_alu:inst5.Input1
+Input2_2 => mini_alu:inst5.Input2
+Input1_1 => mini_alu:inst3.Input1
+Input2_1 => mini_alu:inst3.Input2
+Result1 <= mini_alu:inst3.Result
+Result2 <= mini_alu:inst5.Result
+Result3 <= mini_alu:inst700.Result
+Result4 <= mini_alu:inst900.Result
+Result5 <= mini_alu:inst11.Result
+Result6 <= mini_alu:inst13.Result
+Result7 <= mini_alu:inst15.Result
+Result8 <= mini_alu:inst17.Result
+Result9 <= mini_alu:inst19.Result
+Result10 <= mini_alu:inst21.Result
+Result11 <= mini_alu:inst23.Result
+Result12 <= mini_alu:inst25.Result
+Result13 <= mini_alu:inst27.Result
+Result14 <= mini_alu:inst29.Result
+Result15 <= mini_alu:inst31.Result
+Result16 <= mini_alu:inst33.Result
+Result17 <= mini_alu:inst35.Result
+Result18 <= mini_alu:inst37.Result
+Result19 <= mini_alu:inst39.Result
+Result20 <= mini_alu:inst41.Result
+Result21 <= mini_alu:inst43.Result
+Result22 <= mini_alu:inst45.Result
+Result23 <= mini_alu:inst47.Result
+Result24 <= mini_alu:inst49.Result
+Result25 <= mini_alu:inst51.Result
+Result26 <= mini_alu:inst53.Result
+Result27 <= mini_alu:inst55.Result
+Result28 <= mini_alu:inst5700.Result
+Result29 <= mini_alu:inst5900.Result
+Result30 <= mini_alu:inst61.Result
+Result31 <= mini_alu:inst63.Result
+Bne <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Overflow <= mini_alu:inst63.Cout
+
+
+|alu32bit|mini_alu:inst
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst63
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst63|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst63|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst63|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst63|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst63|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst63|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst63|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst61
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst61|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst61|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst61|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst61|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst61|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst61|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst61|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst5900
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst5900|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst5900|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5900|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5900|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5900|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5900|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5900|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst5700
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst5700|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst5700|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5700|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5700|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5700|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5700|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5700|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst55
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst55|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst55|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst55|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst55|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst55|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst55|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst55|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst53
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst53|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst53|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst53|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst53|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst53|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst53|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst53|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst51
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst51|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst51|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst51|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst51|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst51|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst51|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst51|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst49
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst49|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst49|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst49|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst49|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst49|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst49|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst49|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst47
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst47|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst47|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst47|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst47|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst47|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst47|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst47|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst45
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst45|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst45|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst45|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst45|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst45|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst45|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst45|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst43
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst43|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst43|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst43|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst43|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst43|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst43|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst43|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst41
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst41|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst41|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst41|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst41|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst41|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst41|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst41|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst39
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst39|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst39|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst39|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst39|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst39|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst39|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst39|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst37
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst37|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst37|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst37|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst37|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst37|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst37|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst37|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst35
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst35|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst35|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst35|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst35|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst35|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst35|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst35|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst33
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst33|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst33|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst33|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst33|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst33|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst33|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst33|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst31
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst31|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst31|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst31|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst31|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst31|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst31|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst31|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst29
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst29|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst29|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst29|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst29|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst29|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst29|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst29|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst27
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst27|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst27|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst27|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst27|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst27|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst27|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst27|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst25
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst25|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst25|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst25|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst25|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst25|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst25|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst25|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst23
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst23|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst23|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst23|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst23|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst23|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst23|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst23|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst21
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst21|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst21|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst21|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst21|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst21|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst21|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst21|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst19
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst19|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst19|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst19|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst19|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst19|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst19|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst19|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst17
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst17|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst17|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst17|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst17|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst17|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst17|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst17|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst15
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst15|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst15|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst15|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst15|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst15|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst15|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst15|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst13
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst13|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst13|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst13|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst13|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst13|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst13|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst13|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst11
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst11|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst11|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst11|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst11|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst11|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst11|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst11|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst900
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst900|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst900|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst900|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst900|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst900|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst900|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst900|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst700
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst700|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst700|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst700|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst700|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst700|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst700|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst700|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst5
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst5|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst5|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst5|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|mini_alu:inst3
+Result <= mux4_1bit:inst34.Result
+InvertInput1 => mux2_1bit:inst.Selector
+Input1 => mux2_1bit:inst.Input1
+Input1 => inst14.IN0
+InvertInput2 => mux2_1bit:inst33.Selector
+Input2 => mux2_1bit:inst33.Input1
+Input2 => inst16.IN0
+Cin => fulladder2_1bit:inst31.Cin
+Less => mux4_1bit:inst34.Input4
+Selector0 => mux4_1bit:inst34.Selector0
+Selector1 => mux4_1bit:inst34.Selector1
+Set <= fulladder2_1bit:inst31.Result
+Cout <= fulladder2_1bit:inst31.Cout
+
+
+|alu32bit|mini_alu:inst3|mux4_1bit:inst34
+Result <= mux2_1bit:inst2.Result
+Selector0 => mux2_1bit:inst2.Selector
+Selector1 => mux2_1bit:inst.Selector
+Selector1 => mux2_1bit:inst1.Selector
+Input1 => mux2_1bit:inst.Input1
+Input2 => mux2_1bit:inst.Input2
+Input3 => mux2_1bit:inst1.Input1
+Input4 => mux2_1bit:inst1.Input2
+
+
+|alu32bit|mini_alu:inst3|mux4_1bit:inst34|mux2_1bit:inst2
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst3|mux4_1bit:inst34|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst3|mux4_1bit:inst34|mux2_1bit:inst1
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst3|mux2_1bit:inst
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst3|mux2_1bit:inst33
+Result <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst1.IN0
+Selector => inst2.IN0
+Input2 => inst1.IN1
+Input1 => inst.IN1
+
+
+|alu32bit|mini_alu:inst3|fulladder2_1bit:inst31
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input1 => inst.IN0
+Input2 => inst2.IN1
+Input2 => inst.IN1
+Cin => inst3.IN0
+Cin => inst1.IN0
+Result <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu32bit|or32:inst1
+Result <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst.IN0
+Input3 => inst.IN1
+Input2 => inst.IN2
+Input4 => inst.IN3
+Input6 => inst.IN4
+Input5 => inst.IN5
+Input7 => inst.IN6
+Input8 => inst.IN7
+Input17 => inst2.IN0
+Input19 => inst2.IN1
+Input18 => inst2.IN2
+Input20 => inst2.IN3
+Input22 => inst2.IN4
+Input21 => inst2.IN5
+Input23 => inst2.IN6
+Input24 => inst2.IN7
+Input25 => inst3.IN0
+Input27 => inst3.IN1
+Input26 => inst3.IN2
+Input28 => inst3.IN3
+Input30 => inst3.IN4
+Input29 => inst3.IN5
+Input31 => inst3.IN6
+Input32 => inst3.IN7
+Input9 => inst1.IN0
+Input11 => inst1.IN1
+Input10 => inst1.IN2
+Input12 => inst1.IN3
+Input14 => inst1.IN4
+Input13 => inst1.IN5
+Input15 => inst1.IN6
+Input16 => inst1.IN7
+
+
