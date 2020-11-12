@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone 10 LP"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY alu32bit
+set_global_assignment -name TOP_LEVEL_ENTITY Lab2MipsUnicycle
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:05:43  OCTOBER 27, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -55,13 +55,9 @@ set_global_assignment -name BDF_FILE mini_alu.bdf
 set_global_assignment -name BDF_FILE alu.bdf
 set_global_assignment -name BDF_FILE alu32bit.bdf
 set_global_assignment -name BDF_FILE or32.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE Block1.bdf
 set_global_assignment -name BDF_FILE programcounter.bdf
 set_global_assignment -name BDF_FILE control.bdf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE fulladder2_32bit.bdf
 set_global_assignment -name BDF_FILE mux2_32bit.bdf
 set_global_assignment -name BDF_FILE shift1left32bit.bdf
@@ -75,3 +71,9 @@ set_global_assignment -name BDF_FILE writeenabledflipflop32bit.bdf
 set_global_assignment -name BDF_FILE mux32_32bit.bdf
 set_global_assignment -name BDF_FILE 32writeenabledflipflop32bit.bdf
 set_global_assignment -name BDF_FILE mux2_5bit.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE and5.bdf
+set_global_assignment -name BDF_FILE and5_1bit.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
