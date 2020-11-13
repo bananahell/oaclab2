@@ -78,4 +78,5 @@ set_global_assignment -name BDF_FILE and5.bdf
 set_global_assignment -name BDF_FILE and5_1bit.bdf
 set_global_assignment -name BDF_FILE alucontrol.bdf
 set_global_assignment -name BDF_FILE signextend16to32bit.bdf
+set_global_assignment -name BDF_FILE 32writeenabledflipflop32bit2input.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
