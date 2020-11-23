@@ -19,33 +19,33 @@ Intel and sold by Intel or its authorized distributors.  Please
 refer to the applicable agreement for further details, at
 https://fpgasoftware.intel.com/eula.
 */
-(header "symbol" (version "1.2"))
+(header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 320 112)
-	(text "instructions_memory" (rect 5 0 128 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(rect 16 16 296 96)
+	(text "instruction_memory" (rect 5 0 85 12)(font "Arial" ))
+	(text "inst" (rect 8 64 20 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "ReadAddress[31..0]" (rect 0 0 118 19)(font "Intel Clear" (font_size 8)))
-		(text "ReadAddress[31..0]" (rect 21 27 139 46)(font "Intel Clear" (font_size 8)))
+		(text "read_address[31..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "read_address[31..0]" (rect 21 27 100 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 304 32)
+		(pt 280 32)
 		(output)
-		(text "Instruction[31..0]" (rect 0 0 100 19)(font "Intel Clear" (font_size 8)))
-		(text "Instruction[31..0]" (rect 183 27 283 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 304 32)(pt 288 32)(line_width 3))
+		(text "instruction[31..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "instruction[31..0]" (rect 197 27 259 39)(font "Arial" ))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
 	)
 	(port
-		(pt 304 48)
+		(pt 280 48)
 		(output)
-		(text "LastInstAddress[31..0]" (rect 0 0 133 19)(font "Intel Clear" (font_size 8)))
-		(text "LastInstAddress[31..0]" (rect 150 43 283 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 304 48)(pt 288 48)(line_width 3))
+		(text "last_instr_address[31..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "last_instr_address[31..0]" (rect 163 43 259 55)(font "Arial" ))
+		(line (pt 280 48)(pt 264 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 288 80))
+		(rectangle (rect 16 16 264 64)(line_width 1))
 	)
 )

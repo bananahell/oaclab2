@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (symbol
-	(rect 968 408 1176 536)
+	(rect 1264 360 1472 488)
 	(text "alu32bit" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
 	(text "inst2" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
@@ -82,35 +82,6 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(drawing
 		(rectangle (rect 16 16 192 112))
-	)
-)
-(symbol
-	(rect 424 416 728 512)
-	(text "instructions_memory" (rect 5 0 128 19)(font "Intel Clear" (font_size 8)))
-	(text "inst4" (rect 8 75 30 92)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "ReadAddress[31..0]" (rect 0 0 118 19)(font "Intel Clear" (font_size 8)))
-		(text "ReadAddress[31..0]" (rect 21 27 139 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 304 32)
-		(output)
-		(text "Instruction[31..0]" (rect 0 0 100 19)(font "Intel Clear" (font_size 8)))
-		(text "Instruction[31..0]" (rect 183 27 283 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 304 32)(pt 288 32)(line_width 3))
-	)
-	(port
-		(pt 304 48)
-		(output)
-		(text "LastInstAddress[31..0]" (rect 0 0 133 19)(font "Intel Clear" (font_size 8)))
-		(text "LastInstAddress[31..0]" (rect 150 43 283 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 304 48)(pt 288 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 288 80))
 	)
 )
 (symbol
@@ -363,10 +334,56 @@ https://fpgasoftware.intel.com/eula.
 		(rectangle (rect 16 16 240 144))
 	)
 )
-(connector
-	(pt 728 448)
-	(pt 800 448)
-	(bus)
+(symbol
+	(rect 432 416 712 496)
+	(text "instruction_memory" (rect 5 0 102 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "read_address[31..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "read_address[31..0]" (rect 21 27 118 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 280 32)
+		(output)
+		(text "instruction[31..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "instruction[31..0]" (rect 190 27 272 39)(font "Arial" ))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
+	)
+	(port
+		(pt 280 48)
+		(output)
+		(text "last_instr_address[31..0]" (rect 0 0 121 12)(font "Arial" ))
+		(text "last_instr_address[31..0]" (rect 157 43 278 55)(font "Arial" ))
+		(line (pt 280 48)(pt 264 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 264 64))
+	)
+)
+(symbol
+	(rect 896 416 1168 512)
+	(text "signextend16to32bit" (rect 5 0 130 19)(font "Intel Clear" (font_size 8)))
+	(text "inst3" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Input16bit[15..0]" (rect 0 0 102 19)(font "Intel Clear" (font_size 8)))
+		(text "Input16bit[15..0]" (rect 21 27 123 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "Output32bit[31..0]" (rect 0 0 113 19)(font "Intel Clear" (font_size 8)))
+		(text "Output32bit[31..0]" (rect 138 27 251 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 272 32)(pt 256 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 80))
+	)
 )
 (connector
 	(text "Instruction[15..0]" (rect 810 432 887 449)(font "Intel Clear" ))
@@ -520,7 +537,12 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
 	(pt 336 448)
-	(pt 424 448)
+	(pt 432 448)
+	(bus)
+)
+(connector
+	(pt 712 448)
+	(pt 800 448)
 	(bus)
 )
 (junction (pt 336 448))
