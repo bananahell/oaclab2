@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (symbol
-	(rect 1264 360 1472 488)
+	(rect 1728 376 1936 504)
 	(text "alu32bit" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
 	(text "inst2" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
@@ -385,6 +385,122 @@ https://fpgasoftware.intel.com/eula.
 		(rectangle (rect 16 16 256 80))
 	)
 )
+(symbol
+	(rect 1296 -136 1528 -40)
+	(text "shift2left32bit" (rect 5 0 92 19)(font "Intel Clear" (font_size 8)))
+	(text "inst8" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Input32[31..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "Input32[31..0]" (rect 21 27 107 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "Result32[31..0]" (rect 0 0 92 19)(font "Intel Clear" (font_size 8)))
+		(text "Result32[31..0]" (rect 119 27 211 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "Overflow1" (rect 0 0 61 19)(font "Intel Clear" (font_size 8)))
+		(text "Overflow1" (rect 150 43 211 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 48)(pt 216 48))
+	)
+	(port
+		(pt 232 64)
+		(output)
+		(text "Overflow2" (rect 0 0 61 19)(font "Intel Clear" (font_size 8)))
+		(text "Overflow2" (rect 150 59 211 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 64)(pt 216 64))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 80))
+	)
+)
+(symbol
+	(rect 176 -280 320 -184)
+	(text "four32bit" (rect 5 0 61 19)(font "Intel Clear" (font_size 8)))
+	(text "inst10" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 144 32)
+		(output)
+		(text "Result32[31..0]" (rect 0 0 92 19)(font "Intel Clear" (font_size 8)))
+		(text "Result32[31..0]" (rect 31 27 123 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 144 32)(pt 128 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 80))
+	)
+)
+(symbol
+	(rect 952 -296 1160 -200)
+	(text "mux2_32bit" (rect 5 0 78 19)(font "Intel Clear" (font_size 8)))
+	(text "inst11" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Selector" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "Selector" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Input1[31..0]" (rect 0 0 77 19)(font "Intel Clear" (font_size 8)))
+		(text "Input1[31..0]" (rect 21 43 98 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Input2[31..0]" (rect 0 0 77 19)(font "Intel Clear" (font_size 8)))
+		(text "Input2[31..0]" (rect 21 59 98 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "Result[31..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "Result[31..0]" (rect 112 27 187 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 80))
+	)
+)
+(symbol
+	(rect 1312 504 1616 600)
+	(text "alucontrol" (rect 5 0 62 19)(font "Intel Clear" (font_size 8)))
+	(text "inst12" (rect 8 75 36 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "AluOP[1..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "AluOP[1..0]" (rect 21 27 88 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "FunctionInput[5..0]" (rect 0 0 110 19)(font "Intel Clear" (font_size 8)))
+		(text "FunctionInput[5..0]" (rect 21 43 131 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "AluControlFunction[3..0]" (rect 0 0 141 19)(font "Intel Clear" (font_size 8)))
+		(text "AluControlFunction[3..0]" (rect 142 27 283 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 32)(pt 288 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
 (connector
 	(text "Instruction[15..0]" (rect 810 432 887 449)(font "Intel Clear" ))
 	(pt 800 448)
@@ -476,11 +592,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 800 320)
-	(pt 800 448)
-	(bus)
-)
-(connector
 	(pt 944 336)
 	(pt 1008 336)
 	(bus)
@@ -543,6 +654,57 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 712 448)
 	(pt 800 448)
+	(bus)
+)
+(connector
+	(pt 320 -248)
+	(pt 432 -248)
+	(bus)
+)
+(connector
+	(pt 640 -248)
+	(pt 952 -248)
+	(bus)
+)
+(connector
+	(pt 1160 -264)
+	(pt 1184 -264)
+	(bus)
+)
+(connector
+	(pt 1184 -344)
+	(pt 1184 -264)
+	(bus)
+)
+(connector
+	(pt 112 448)
+	(pt 80 448)
+	(bus)
+)
+(connector
+	(pt 80 448)
+	(pt 80 -344)
+	(bus)
+)
+(connector
+	(pt 80 -344)
+	(pt 1184 -344)
+	(bus)
+)
+(connector
+	(pt 800 320)
+	(pt 800 448)
+	(bus)
+)
+(connector
+	(pt 800 448)
+	(pt 800 552)
+	(bus)
+)
+(connector
+	(text "Instruction[5..0]" (rect 810 536 881 553)(font "Intel Clear" ))
+	(pt 1312 552)
+	(pt 800 552)
 	(bus)
 )
 (junction (pt 336 448))

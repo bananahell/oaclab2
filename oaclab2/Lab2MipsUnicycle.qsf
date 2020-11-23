@@ -81,4 +81,6 @@ set_global_assignment -name BDF_FILE signextend16to32bit.bdf
 set_global_assignment -name BDF_FILE 32writeenabledflipflop32bit2input.bdf
 set_global_assignment -name VHDL_FILE intructions_memory.vhd
 set_global_assignment -name VHDL_FILE instructionsmemory.vhd
+set_global_assignment -name BDF_FILE shift2left32bit.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE four32bit.bdf
