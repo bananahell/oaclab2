@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2MipsUnicycle
-Thu Nov 12 13:55:00 2020
+Tue Nov 24 00:16:47 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Nov 12 13:55:00 2020           ;
+; Analysis & Synthesis Status        ; Failed - Tue Nov 24 00:16:47 2020           ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lab2MipsUnicycle                            ;
 ; Top-level Entity Name              ; Lab2MipsUnicycle                            ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 12 13:54:53 2020
+    Info: Processing started: Tue Nov 24 00:15:03 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2MipsUnicycle -c Lab2MipsUnicycle
 Warning (125092): Tcl Script File rom32bit.qip not found
     Info (125063): set_global_assignment -name QIP_FILE rom32bit.qip
@@ -198,10 +198,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file shift1l
     Info (12023): Found entity 1: shift1left32bit
 Info (12021): Found 1 design units, including 1 entities, in source file shift1left16bit.bdf
     Info (12023): Found entity 1: shift1left16bit
-Info (12021): Found 1 design units, including 1 entities, in source file registers.bdf
-    Info (12023): Found entity 1: registers
-Info (12021): Found 1 design units, including 1 entities, in source file instructions_memory.bdf
-    Info (12023): Found entity 1: instructions_memory
+Warning (12019): Can't analyze file -- file registers.bdf is missing
+Warning (12019): Can't analyze file -- file instructions_memory.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file dflipflop.bdf
     Info (12023): Found entity 1: dflipflop
 Info (12021): Found 1 design units, including 1 entities, in source file dflipflop32bit.bdf
@@ -217,13 +215,59 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux2_5b
 Warning (12018): Entity "and5" will be ignored because it conflicts with Quartus Prime primitive name
 Info (12021): Found 1 design units, including 1 entities, in source file and5_1bit.bdf
     Info (12023): Found entity 1: and5_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.bdf
+    Info (12023): Found entity 1: alucontrol
+Info (12021): Found 1 design units, including 1 entities, in source file signextend16to32bit.bdf
+    Info (12023): Found entity 1: signextend16to32bit
+Info (12021): Found 1 design units, including 1 entities, in source file 32writeenabledflipflop32bit2input.bdf
+    Info (12023): Found entity 1: 32writeenabledflipflop32bit2input
+Warning (12019): Can't analyze file -- file intructions_memory.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file instructionsmemory.vhd
+    Info (12022): Found design unit 1: instructions_memory-behavioral File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/instructionsmemory.vhd Line: 15
+    Info (12023): Found entity 1: instructions_memory File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/instructionsmemory.vhd Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file shift2left32bit.bdf
+    Info (12023): Found entity 1: shift2left32bit
+Info (12021): Found 1 design units, including 1 entities, in source file four32bit.bdf
+    Info (12023): Found entity 1: four32bit
 Info (12127): Elaborating entity "Lab2MipsUnicycle" for the top level hierarchy
-Error (275023): Width mismatch in Instruction[15..0] -- source is ""Instruction[31..0]" (ID instructions_memory:inst4)"
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 8 warnings
-    Error: Peak virtual memory: 4702 megabytes
-    Error: Processing ended: Thu Nov 12 13:55:00 2020
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:18
+Warning (275002): No superset bus at connection
+Warning (275002): No superset bus at connection
+Warning (12125): Using design file registers.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: registers-beh File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/registers.vhd Line: 17
+    Info (12023): Found entity 1: registers File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/registers.vhd Line: 6
+Info (12128): Elaborating entity "registers" for hierarchy "registers:inst"
+Warning (10492): VHDL Process Statement warning at registers.vhd(59): signal "reg_write" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/registers.vhd Line: 59
+Info (12128): Elaborating entity "control" for hierarchy "control:inst5"
+Info (12128): Elaborating entity "and5_1bit" for hierarchy "control:inst5|and5_1bit:inst3"
+Info (12128): Elaborating entity "mux2_32bit" for hierarchy "mux2_32bit:inst16"
+Info (12128): Elaborating entity "mux2_1bit" for hierarchy "mux2_32bit:inst16|mux2_1bit:inst999"
+Warning (12125): Using design file memory.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: memory-behavioral File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/memory.vhd Line: 16
+    Info (12023): Found entity 1: memory File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/memory.vhd Line: 7
+Info (12128): Elaborating entity "memory" for hierarchy "memory:inst4"
+Info (12128): Elaborating entity "alu32bit" for hierarchy "alu32bit:inst2"
+Info (12128): Elaborating entity "or32" for hierarchy "alu32bit:inst2|or32:inst1"
+Info (12128): Elaborating entity "mini_alu" for hierarchy "alu32bit:inst2|mini_alu:inst"
+Info (12128): Elaborating entity "mux4_1bit" for hierarchy "alu32bit:inst2|mini_alu:inst|mux4_1bit:inst34"
+Info (12128): Elaborating entity "fulladder2_1bit" for hierarchy "alu32bit:inst2|mini_alu:inst|fulladder2_1bit:inst31"
+Info (12128): Elaborating entity "alucontrol" for hierarchy "alucontrol:inst12"
+Warning (275008): Primitive "NOT" of instance "inst3" not used
+Info (12128): Elaborating entity "signextend16to32bit" for hierarchy "signextend16to32bit:inst3"
+Warning (275002): No superset bus at connection
+Info (12128): Elaborating entity "mux2_5bit" for hierarchy "mux2_5bit:inst9"
+Info (12128): Elaborating entity "four32bit" for hierarchy "four32bit:inst10"
+Info (12128): Elaborating entity "fulladder2_32bit" for hierarchy "fulladder2_32bit:inst7"
+Info (12128): Elaborating entity "programcounter" for hierarchy "programcounter:inst6"
+Info (12128): Elaborating entity "shift2left32bit" for hierarchy "shift2left32bit:inst8"
+Info (12128): Elaborating entity "shift1left32bit" for hierarchy "shift2left32bit:inst8|shift1left32bit:inst"
+Info (12128): Elaborating entity "instructions_memory" for hierarchy "instructions_memory:inst14"
+Error (10536): VHDL Loop Statement error at instructionsmemory.vhd(64): loop must terminate within 10,000 iterations File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/instructionsmemory.vhd Line: 64
+Error (10442): VHDL Process Statement error at instructionsmemory.vhd(55): Process Statement must contain either a sensitivity list or a Wait Statement File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/instructionsmemory.vhd Line: 55
+Error (12152): Can't elaborate user hierarchy "instructions_memory:inst14"
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 18 warnings
+    Error: Peak virtual memory: 5112 megabytes
+    Error: Processing ended: Tue Nov 24 00:16:47 2020
+    Error: Elapsed time: 00:01:44
+    Error: Total CPU time (on all processors): 00:01:34
 
 

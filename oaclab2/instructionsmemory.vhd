@@ -4,15 +4,15 @@ use IEEE.numeric_std.all;
 use STD.textio.all;
 
 
-entity instruction_memory is
+entity instructions_memory is
   port (
-    read_address: in STD_LOGIC_VECTOR (31 downto 0);
-    instruction, last_instr_address: out STD_LOGIC_VECTOR (31 downto 0)
+    ReadAddress: in STD_LOGIC_VECTOR (31 downto 0);
+    Instruction, LastInstrAddress: out STD_LOGIC_VECTOR (31 downto 0)
   );
-end instruction_memory;
+end instructions_memory;
 
 
-architecture behavioral of instruction_memory is
+architecture behavioral of instructions_memory is
 
   type mem_array is array(0 to 31) of STD_LOGIC_VECTOR (31 downto 0);
   signal data_mem: mem_array := (
@@ -58,9 +58,10 @@ architecture behavioral of instruction_memory is
     variable i: integer := 0;
     variable j : integer := 0;
     variable char : character:='0';
+    variable stopper : integer := 0;
 
   begin
-    file_open(file_pointer, "instructions.txt", READ_MODE);
+    file_open(file_pointer, "UnicicloInst.mif", READ_MODE);
     while not endfile(file_pointer) loop
       readline(file_pointer, line_num);
       READ(line_num, line_content);
@@ -73,17 +74,18 @@ architecture behavioral of instruction_memory is
         end if;
       end loop;
       i := i + 1;
+      stopper := stopper + 1;
     end loop;
     if i > 0 then
-      last_instr_address <= std_logic_vector(to_unsigned((i-1)*4, last_instr_address'length));
+      LastInstrAddress <= std_logic_vector(to_unsigned((i-1)*4, LastInstrAddress'length));
     else
-      last_instr_address <= "00000000000000000000000000000000";
+      LastInstrAddress <= "00000000000000000000000000000000";
     end if;
 
     file_close(file_pointer);
     wait;
   end process;
 
-  instruction <= data_mem(to_integer(unsigned(read_address(31 downto 2))));
+  Instruction <= data_mem(to_integer(unsigned(ReadAddress(31 downto 2))));
 
 end behavioral;
