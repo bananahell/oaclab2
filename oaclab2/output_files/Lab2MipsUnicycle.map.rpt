@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2MipsUnicycle
-Tue Nov 24 00:16:47 2020
+Tue Nov 24 11:36:07 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,7 +10,9 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Source assignments for instructionsmemory:inst23|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block|altsyncram_3ka1:auto_generated
+  6. Parameter Settings for User Entity Instance: instructionsmemory:inst23|LPM_RAM_DQ:inst
+  7. Analysis & Synthesis Messages
 
 
 
@@ -37,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Nov 24 00:16:47 2020           ;
+; Analysis & Synthesis Status        ; Failed - Tue Nov 24 11:36:07 2020           ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lab2MipsUnicycle                            ;
 ; Top-level Entity Name              ; Lab2MipsUnicycle                            ;
@@ -155,13 +157,45 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for instructionsmemory:inst23|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block|altsyncram_3ka1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                 ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                  ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: instructionsmemory:inst23|LPM_RAM_DQ:inst ;
++------------------------+------------------+--------------------------------------------+
+; Parameter Name         ; Value            ; Type                                       ;
++------------------------+------------------+--------------------------------------------+
+; LPM_WIDTH              ; 32               ; Untyped                                    ;
+; LPM_WIDTHAD            ; 12               ; Untyped                                    ;
+; LPM_NUMWORDS           ; 4096             ; Untyped                                    ;
+; LPM_INDATA             ; REGISTERED       ; Untyped                                    ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED       ; Untyped                                    ;
+; LPM_OUTDATA            ; UNREGISTERED     ; Untyped                                    ;
+; LPM_FILE               ; UnicicloInst.mif ; Untyped                                    ;
+; USE_EAB                ; ON               ; Untyped                                    ;
+; DEVICE_FAMILY          ; Cyclone 10 LP    ; Untyped                                    ;
+; CBXI_PARAMETER         ; NOTHING          ; Untyped                                    ;
+; AUTO_CARRY_CHAINS      ; ON               ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF              ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON               ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF              ; IGNORE_CASCADE                             ;
++------------------------+------------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 24 00:15:03 2020
+    Info: Processing started: Tue Nov 24 11:35:58 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2MipsUnicycle -c Lab2MipsUnicycle
 Warning (125092): Tcl Script File rom32bit.qip not found
     Info (125063): set_global_assignment -name QIP_FILE rom32bit.qip
@@ -222,14 +256,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file signext
 Info (12021): Found 1 design units, including 1 entities, in source file 32writeenabledflipflop32bit2input.bdf
     Info (12023): Found entity 1: 32writeenabledflipflop32bit2input
 Warning (12019): Can't analyze file -- file intructions_memory.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file instructionsmemory.vhd
-    Info (12022): Found design unit 1: instructions_memory-behavioral File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/instructionsmemory.vhd Line: 15
-    Info (12023): Found entity 1: instructions_memory File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/instructionsmemory.vhd Line: 7
+Warning (12019): Can't analyze file -- file instructionsmemory.vhd is missing
 Info (12021): Found 1 design units, including 1 entities, in source file shift2left32bit.bdf
     Info (12023): Found entity 1: shift2left32bit
 Info (12021): Found 1 design units, including 1 entities, in source file four32bit.bdf
     Info (12023): Found entity 1: four32bit
+Info (12021): Found 1 design units, including 1 entities, in source file instructionsmemory.bdf
+    Info (12023): Found entity 1: instructionsmemory
 Info (12127): Elaborating entity "Lab2MipsUnicycle" for the top level hierarchy
+Warning (275002): No superset bus at connection
 Warning (275002): No superset bus at connection
 Warning (275002): No superset bus at connection
 Warning (12125): Using design file registers.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
@@ -257,17 +292,95 @@ Warning (275002): No superset bus at connection
 Info (12128): Elaborating entity "mux2_5bit" for hierarchy "mux2_5bit:inst9"
 Info (12128): Elaborating entity "four32bit" for hierarchy "four32bit:inst10"
 Info (12128): Elaborating entity "fulladder2_32bit" for hierarchy "fulladder2_32bit:inst7"
-Info (12128): Elaborating entity "programcounter" for hierarchy "programcounter:inst6"
 Info (12128): Elaborating entity "shift2left32bit" for hierarchy "shift2left32bit:inst8"
 Info (12128): Elaborating entity "shift1left32bit" for hierarchy "shift2left32bit:inst8|shift1left32bit:inst"
-Info (12128): Elaborating entity "instructions_memory" for hierarchy "instructions_memory:inst14"
-Error (10536): VHDL Loop Statement error at instructionsmemory.vhd(64): loop must terminate within 10,000 iterations File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/instructionsmemory.vhd Line: 64
-Error (10442): VHDL Process Statement error at instructionsmemory.vhd(55): Process Statement must contain either a sensitivity list or a Wait Statement File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/instructionsmemory.vhd Line: 55
-Error (12152): Can't elaborate user hierarchy "instructions_memory:inst14"
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 18 warnings
-    Error: Peak virtual memory: 5112 megabytes
-    Error: Processing ended: Tue Nov 24 00:16:47 2020
-    Error: Elapsed time: 00:01:44
-    Error: Total CPU time (on all processors): 00:01:34
+Info (12128): Elaborating entity "instructionsmemory" for hierarchy "instructionsmemory:inst23"
+Info (12128): Elaborating entity "LPM_RAM_DQ" for hierarchy "instructionsmemory:inst23|LPM_RAM_DQ:inst"
+Info (12130): Elaborated megafunction instantiation "instructionsmemory:inst23|LPM_RAM_DQ:inst"
+Info (12133): Instantiated megafunction "instructionsmemory:inst23|LPM_RAM_DQ:inst" with the following parameter:
+    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info (12134): Parameter "LPM_FILE" = "UnicicloInst.mif"
+    Info (12134): Parameter "LPM_INDATA" = "REGISTERED"
+    Info (12134): Parameter "LPM_OUTDATA" = "UNREGISTERED"
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+    Info (12134): Parameter "LPM_WIDTHAD" = "12"
+Info (12128): Elaborating entity "altram" for hierarchy "instructionsmemory:inst23|LPM_RAM_DQ:inst|altram:sram" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_ram_dq.tdf Line: 106
+Warning (287001): Assertion warning: altram does not support Cyclone 10 LP device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Cyclone 10 LP devices File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.tdf Line: 212
+Info (12131): Elaborated megafunction instantiation "instructionsmemory:inst23|LPM_RAM_DQ:inst|altram:sram", which is child of megafunction instantiation "instructionsmemory:inst23|LPM_RAM_DQ:inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_ram_dq.tdf Line: 106
+Info (12128): Elaborating entity "altsyncram" for hierarchy "instructionsmemory:inst23|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.tdf Line: 103
+Info (12131): Elaborated megafunction instantiation "instructionsmemory:inst23|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "instructionsmemory:inst23|LPM_RAM_DQ:inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.tdf Line: 103
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3ka1.tdf
+    Info (12023): Found entity 1: altsyncram_3ka1 File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_3ka1" for hierarchy "instructionsmemory:inst23|LPM_RAM_DQ:inst|altram:sram|altsyncram:ram_block|altsyncram_3ka1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "programcounter" for hierarchy "programcounter:inst6"
+Error (14091): WYSIWYG RAM primitive "ram_block1a0" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 37
+Error (14091): WYSIWYG RAM primitive "ram_block1a0" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 37
+Error (14091): WYSIWYG RAM primitive "ram_block1a1" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 60
+Error (14091): WYSIWYG RAM primitive "ram_block1a1" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 60
+Error (14091): WYSIWYG RAM primitive "ram_block1a2" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 83
+Error (14091): WYSIWYG RAM primitive "ram_block1a2" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 83
+Error (14091): WYSIWYG RAM primitive "ram_block1a3" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 106
+Error (14091): WYSIWYG RAM primitive "ram_block1a3" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 106
+Error (14091): WYSIWYG RAM primitive "ram_block1a4" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 129
+Error (14091): WYSIWYG RAM primitive "ram_block1a4" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 129
+Error (14091): WYSIWYG RAM primitive "ram_block1a5" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 152
+Error (14091): WYSIWYG RAM primitive "ram_block1a5" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 152
+Error (14091): WYSIWYG RAM primitive "ram_block1a6" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 175
+Error (14091): WYSIWYG RAM primitive "ram_block1a6" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 175
+Error (14091): WYSIWYG RAM primitive "ram_block1a7" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 198
+Error (14091): WYSIWYG RAM primitive "ram_block1a7" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 198
+Error (14091): WYSIWYG RAM primitive "ram_block1a8" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 221
+Error (14091): WYSIWYG RAM primitive "ram_block1a8" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 221
+Error (14091): WYSIWYG RAM primitive "ram_block1a9" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 244
+Error (14091): WYSIWYG RAM primitive "ram_block1a9" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 244
+Error (14091): WYSIWYG RAM primitive "ram_block1a10" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 267
+Error (14091): WYSIWYG RAM primitive "ram_block1a10" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 267
+Error (14091): WYSIWYG RAM primitive "ram_block1a11" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 290
+Error (14091): WYSIWYG RAM primitive "ram_block1a11" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 290
+Error (14091): WYSIWYG RAM primitive "ram_block1a12" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 313
+Error (14091): WYSIWYG RAM primitive "ram_block1a12" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 313
+Error (14091): WYSIWYG RAM primitive "ram_block1a13" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 336
+Error (14091): WYSIWYG RAM primitive "ram_block1a13" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 336
+Error (14091): WYSIWYG RAM primitive "ram_block1a14" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 359
+Error (14091): WYSIWYG RAM primitive "ram_block1a14" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 359
+Error (14091): WYSIWYG RAM primitive "ram_block1a15" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 382
+Error (14091): WYSIWYG RAM primitive "ram_block1a15" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 382
+Error (14091): WYSIWYG RAM primitive "ram_block1a16" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 405
+Error (14091): WYSIWYG RAM primitive "ram_block1a16" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 405
+Error (14091): WYSIWYG RAM primitive "ram_block1a17" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 428
+Error (14091): WYSIWYG RAM primitive "ram_block1a17" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 428
+Error (14091): WYSIWYG RAM primitive "ram_block1a18" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 451
+Error (14091): WYSIWYG RAM primitive "ram_block1a18" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 451
+Error (14091): WYSIWYG RAM primitive "ram_block1a19" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 474
+Error (14091): WYSIWYG RAM primitive "ram_block1a19" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 474
+Error (14091): WYSIWYG RAM primitive "ram_block1a20" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 497
+Error (14091): WYSIWYG RAM primitive "ram_block1a20" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 497
+Error (14091): WYSIWYG RAM primitive "ram_block1a21" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 520
+Error (14091): WYSIWYG RAM primitive "ram_block1a21" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 520
+Error (14091): WYSIWYG RAM primitive "ram_block1a22" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 543
+Error (14091): WYSIWYG RAM primitive "ram_block1a22" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 543
+Error (14091): WYSIWYG RAM primitive "ram_block1a23" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 566
+Error (14091): WYSIWYG RAM primitive "ram_block1a23" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 566
+Error (14091): WYSIWYG RAM primitive "ram_block1a24" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 589
+Error (14091): WYSIWYG RAM primitive "ram_block1a24" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 589
+Error (14091): WYSIWYG RAM primitive "ram_block1a25" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 612
+Error (14091): WYSIWYG RAM primitive "ram_block1a25" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 612
+Error (14091): WYSIWYG RAM primitive "ram_block1a26" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 635
+Error (14091): WYSIWYG RAM primitive "ram_block1a26" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 635
+Error (14091): WYSIWYG RAM primitive "ram_block1a27" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 658
+Error (14091): WYSIWYG RAM primitive "ram_block1a27" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 658
+Error (14091): WYSIWYG RAM primitive "ram_block1a28" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 681
+Error (14091): WYSIWYG RAM primitive "ram_block1a28" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 681
+Error (14091): WYSIWYG RAM primitive "ram_block1a29" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 704
+Error (14091): WYSIWYG RAM primitive "ram_block1a29" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 704
+Error (14091): WYSIWYG RAM primitive "ram_block1a30" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 727
+Error (14091): WYSIWYG RAM primitive "ram_block1a30" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 727
+Error (14091): WYSIWYG RAM primitive "ram_block1a31" must have the Port A, Data In port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 750
+Error (14091): WYSIWYG RAM primitive "ram_block1a31" must have the Port A, Address port connected File: C:/Users/Pedro Nogueira/Documents/projects/oaclab2/oaclab2/db/altsyncram_3ka1.tdf Line: 750
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 64 errors, 21 warnings
+    Error: Peak virtual memory: 4797 megabytes
+    Error: Processing ended: Tue Nov 24 11:36:07 2020
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:22
 
 
